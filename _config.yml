@@ -1,0 +1,14 @@
+title: PeanutRadio Blog
+email: your-email@example.com
+description: >-
+  PeanutRadio의 기술, 개발, 그리고 일상에 대한 생각과 경험을 공유하는 블로그입니다.
+baseurl: ""
+url: "https://peanutradio.github.io"
+twitter_username: peanutradio
+github_username:  peanutradio
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
