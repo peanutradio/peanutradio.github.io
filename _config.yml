@@ -40,7 +40,7 @@ theme_mode:
 
 cdn:
 
-avatar: /assets/img/avatar.jpg
+avatar:  # 프로필 사진: assets/img/avatar.jpg 에 이미지 추가 후 경로 설정
 
 social_preview_image:
 
