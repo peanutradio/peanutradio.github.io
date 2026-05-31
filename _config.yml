@@ -1,14 +1,133 @@
-title: PeanutRadio Blog
-email: your-email@example.com
-description: >-
-  PeanutRadio의 기술, 개발, 그리고 일상에 대한 생각과 경험을 공유하는 블로그입니다.
-baseurl: ""
-url: "https://peanutradio.github.io"
-twitter_username: peanutradio
-github_username:  peanutradio
+theme: jekyll-theme-chirpy
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+lang: ko
+timezone: Asia/Seoul
+
+title: Daniel Park | IT & Cloud Blog
+tagline: Azure · AI · 클라우드 · 개발 이야기
+
+description: >-
+  Azure, AI, Microsoft Fabric, Foundry 실전 경험과 IT 뉴스를 공유하는 기술 블로그.
+  Pre-Sales Engineer가 쓰는 클라우드 & AI 이야기.
+
+url: "https://peanutradio.github.io"
+
+github:
+  username: peanutradio
+
+twitter:
+  username: peanutradio
+
+social:
+  name: Chan Hu Park (박찬후)
+  email: pch8303@gmail.com
+  links:
+    - https://github.com/peanutradio
+    - https://www.linkedin.com/in/chanhupark
+
+webmaster_verifications:
+  google:
+  bing:
+
+analytics:
+  google:
+    id:
+
+pageviews:
+  provider:
+
+theme_mode:
+
+cdn:
+
+avatar: /assets/img/avatar.jpg
+
+social_preview_image:
+
+toc: true
+
+comments:
+  provider:
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+baseurl: ""
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
