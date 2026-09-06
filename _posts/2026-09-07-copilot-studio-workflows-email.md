@@ -1,6 +1,6 @@
 ---
 title: "Copilot Studio Workflows로 이메일 분류·처리 자동화하기"
-date: 2026-09-07 08:30:00 +0900
+date: 2026-09-07 08:10:00 +0900
 categories: [Copilot Studio]
 tags: [copilot-studio, workflows, mcp, automation, agent, m365]
 description: 새 Workflows로 메일을 분류하고, 미팅을 잡고, 초안을 쓰고, 사람이 승인까지 하는 자동화를 만든다. 노드 구조와 막히기 쉬운 지점 정리.
