@@ -1,0 +1,588 @@
+---
+# Chirpy + TechPulse design system
+# slate 배경 · cyan(#0ea5e9) 강조 · Inter / JetBrains Mono
+---
+
+@use 'main';
+
+/* ============================================================
+   TechPulse Design System  →  Chirpy
+   techpulse-blog/assets/css/extended/custom.css 에서 이식
+   ============================================================ */
+
+/* ── Fonts ───────────────────────────────────────────────── */
+:root {
+  --tp-font-sans: 'Inter', 'Pretendard', -apple-system, BlinkMacSystemFont,
+    'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --tp-font-mono: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas,
+    monospace;
+
+  /* TechPulse accent scale */
+  --tp-accent: #0ea5e9;
+  --tp-accent-hover: #38bdf8;
+  --tp-accent-2: #818cf8;
+  --tp-glow: rgb(14 165 233 / 15%);
+  --tp-dim: rgb(14 165 233 / 8%);
+  --tp-radius: 12px;
+}
+
+body,
+.post-content,
+#sidebar .site-title,
+#sidebar .site-subtitle {
+  font-family: var(--tp-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code,
+pre,
+kbd,
+.highlight,
+.filepath {
+  font-family: var(--tp-font-mono);
+}
+
+/* ============================================================
+   Color tokens — Chirpy 의 테마 적용 선택자와 동일 구조로 덮어씀
+   ============================================================ */
+
+@mixin tp-dark {
+  color-scheme: dark;
+
+  --tp-accent: #0ea5e9;
+  --tp-accent-hover: #38bdf8;
+  --tp-glow: rgb(14 165 233 / 18%);
+  --tp-dim: rgb(14 165 233 / 10%);
+
+  /* Framework */
+  --main-bg: #0a0f1e;
+  --mask-bg: #1e293b;
+  --main-border-color: #1e293b;
+
+  /* Common */
+  --text-color: #cbd5e1;
+  --text-muted-color: #94a3b8;
+  --text-muted-highlight-color: #cbd5e1;
+  --heading-color: #e2e8f0;
+  --label-color: #94a3b8;
+  --blockquote-border-color: #0ea5e9;
+  --blockquote-text-color: #94a3b8;
+  --link-color: #38bdf8;
+  --link-underline-color: rgb(14 165 233 / 40%);
+  --button-bg: #0f172a;
+  --btn-border-color: #1e293b;
+  --btn-backtotop-color: #94a3b8;
+  --btn-backtotop-border-color: #1e293b;
+  --checkbox-color: #475569;
+  --checkbox-checked-color: #0ea5e9;
+  --img-bg: radial-gradient(circle, #0f172a 0%, #0a0f1e 100%);
+  --shimmer-bg: linear-gradient(
+    90deg,
+    rgb(255 255 255 / 0%) 0%,
+    rgb(30 41 59 / 60%) 50%,
+    rgb(255 255 255 / 0%) 100%
+  );
+
+  /* Sidebar */
+  --site-title-color: #e2e8f0;
+  --site-subtitle-color: #94a3b8;
+  --sidebar-bg: #0f172a;
+  --sidebar-border-color: #1e293b;
+  --sidebar-muted-color: #94a3b8;
+  --sidebar-active-color: #38bdf8;
+  --sidebar-hover-bg: rgb(14 165 233 / 10%);
+  --sidebar-btn-bg: #1e293b;
+  --sidebar-btn-color: #94a3b8;
+  --avatar-border-color: rgb(14 165 233 / 55%);
+
+  /* Topbar */
+  --topbar-bg: rgb(10 15 30 / 72%);
+  --topbar-text-color: #cbd5e1;
+  --search-border-color: #1e293b;
+  --search-icon-color: #64748b;
+  --input-focus-border-color: #0ea5e9;
+
+  /* Home */
+  --post-list-text-color: #94a3b8;
+  --btn-patinator-text-color: #94a3b8;
+  --btn-paginator-hover-color: rgb(14 165 233 / 10%);
+
+  /* Posts */
+  --toc-highlight: #38bdf8;
+  --toc-popup-border-color: #1e293b;
+  --btn-share-color: #64748b;
+  --btn-share-hover-color: #0ea5e9;
+  --card-bg: #0f172a;
+  --card-hover-bg: #1e293b;
+  --card-header-bg: #1e293b;
+  --card-shadow: rgb(2 6 23 / 60%) 0 4px 16px 0, rgb(30 41 59 / 80%) 0 0 0 1px;
+  --footnote-target-bg: rgb(14 165 233 / 25%);
+  --tb-odd-bg: #0f172a;
+  --tb-even-bg: #0a0f1e;
+  --tb-border-color: #1e293b;
+  --dash-color: #334155;
+  --kbd-wrap-color: #475569;
+  --kbd-text-color: #e2e8f0;
+  --kbd-bg-color: #1e293b;
+  --prompt-text-color: rgb(203 213 225 / 85%);
+  --prompt-tip-bg: rgb(16 185 129 / 16%);
+  --prompt-tip-icon-color: #10b981;
+  --prompt-info-bg: rgb(14 165 233 / 14%);
+  --prompt-info-icon-color: #0ea5e9;
+  --prompt-warning-bg: rgb(245 158 11 / 16%);
+  --prompt-warning-icon-color: #f59e0b;
+  --prompt-danger-bg: rgb(244 63 94 / 16%);
+  --prompt-danger-icon-color: #f43f5e;
+
+  /* Tags & categories */
+  --tag-border: rgb(14 165 233 / 25%);
+  --tag-shadow: transparent;
+  --tag-hover: rgb(14 165 233 / 18%);
+  --search-tag-bg: rgb(14 165 233 / 10%);
+  --categories-border: #1e293b;
+  --categories-hover-bg: rgb(14 165 233 / 10%);
+  --categories-icon-hover-color: #38bdf8;
+
+  /* Archive */
+  --timeline-color: #1e293b;
+  --timeline-node-bg: #0ea5e9;
+  --timeline-year-dot-color: #0a0f1e;
+
+  /* Code */
+  --language-border-color: #1e293b;
+  --highlight-bg-color: #020617;
+  --highlighter-rouge-color: #cbd5e1;
+  --highlight-lineno-color: #475569;
+  --inline-code-bg: rgb(14 165 233 / 12%);
+  --code-color: #38bdf8;
+  --code-header-text-color: #64748b;
+  --code-header-muted-color: #1e293b;
+  --code-header-icon-color: #475569;
+  --clipboard-checked-color: #10b981;
+  --filepath-text-color: #e2e8f0;
+}
+
+@mixin tp-light {
+  color-scheme: light;
+
+  --tp-accent: #0284c7;
+  --tp-accent-hover: #0ea5e9;
+  --tp-glow: rgb(14 165 233 / 14%);
+  --tp-dim: rgb(14 165 233 / 7%);
+
+  /* Framework */
+  --main-bg: #f8fafc;
+  --mask-bg: #cbd5e1;
+  --main-border-color: #e2e8f0;
+
+  /* Common */
+  --text-color: #1e293b;
+  --text-muted-color: #64748b;
+  --text-muted-highlight-color: #0f172a;
+  --heading-color: #0f172a;
+  --label-color: #475569;
+  --blockquote-border-color: #0ea5e9;
+  --blockquote-text-color: #64748b;
+  --link-color: #0369a1;
+  --link-underline-color: rgb(2 132 199 / 35%);
+  --button-bg: #ffffff;
+  --btn-border-color: #e2e8f0;
+  --btn-backtotop-color: #64748b;
+  --btn-backtotop-border-color: #e2e8f0;
+  --checkbox-color: #cbd5e1;
+  --checkbox-checked-color: #0284c7;
+  --img-bg: radial-gradient(circle, #ffffff 0%, #eef2f6 100%);
+
+  /* Sidebar */
+  --site-title-color: #0f172a;
+  --site-subtitle-color: #64748b;
+  --sidebar-bg: #ffffff;
+  --sidebar-border-color: #e2e8f0;
+  --sidebar-muted-color: #64748b;
+  --sidebar-active-color: #0284c7;
+  --sidebar-hover-bg: rgb(14 165 233 / 8%);
+  --sidebar-btn-bg: #f1f5f9;
+  --sidebar-btn-color: #64748b;
+  --avatar-border-color: rgb(2 132 199 / 35%);
+
+  /* Topbar */
+  --topbar-bg: rgb(248 250 252 / 78%);
+  --topbar-text-color: #334155;
+  --search-border-color: #e2e8f0;
+  --search-icon-color: #94a3b8;
+  --input-focus-border-color: #0284c7;
+
+  /* Home */
+  --post-list-text-color: #64748b;
+  --btn-patinator-text-color: #475569;
+  --btn-paginator-hover-color: rgb(14 165 233 / 8%);
+
+  /* Posts */
+  --toc-highlight: #0284c7;
+  --toc-popup-border-color: #cbd5e1;
+  --btn-share-color: #64748b;
+  --btn-share-hover-color: #0284c7;
+  --card-bg: #ffffff;
+  --card-hover-bg: #f1f5f9;
+  --card-shadow: rgb(15 23 42 / 4%) 0 2px 8px 0, rgb(226 232 240 / 90%) 0 0 0 1px;
+  --footnote-target-bg: rgb(14 165 233 / 18%);
+  --tb-odd-bg: #f8fafc;
+  --tb-even-bg: #ffffff;
+  --tb-border-color: #e2e8f0;
+  --dash-color: #cbd5e1;
+  --kbd-wrap-color: #cbd5e1;
+  --kbd-text-color: #1e293b;
+  --kbd-bg-color: #ffffff;
+  --prompt-text-color: rgb(30 41 59 / 85%);
+  --prompt-tip-bg: rgb(16 185 129 / 12%);
+  --prompt-tip-icon-color: #059669;
+  --prompt-info-bg: rgb(14 165 233 / 10%);
+  --prompt-info-icon-color: #0284c7;
+  --prompt-warning-bg: rgb(245 158 11 / 14%);
+  --prompt-warning-icon-color: #d97706;
+  --prompt-danger-bg: rgb(244 63 94 / 12%);
+  --prompt-danger-icon-color: #e11d48;
+
+  /* Tags & categories */
+  --tag-border: rgb(2 132 199 / 22%);
+  --tag-shadow: transparent;
+  --tag-hover: rgb(14 165 233 / 14%);
+  --search-tag-bg: rgb(14 165 233 / 8%);
+  --categories-border: #e2e8f0;
+  --categories-hover-bg: rgb(14 165 233 / 8%);
+  --categories-icon-hover-color: #0284c7;
+
+  /* Archive */
+  --timeline-color: #e2e8f0;
+  --timeline-node-bg: #0284c7;
+  --timeline-year-dot-color: #ffffff;
+
+  /* Code */
+  --language-border-color: #e2e8f0;
+  --highlight-bg-color: #f1f5f9;
+  --highlighter-rouge-color: #334155;
+  --highlight-lineno-color: #94a3b8;
+  --inline-code-bg: rgb(14 165 233 / 10%);
+  --code-color: #0369a1;
+  --code-header-text-color: #94a3b8;
+  --code-header-muted-color: #e2e8f0;
+  --code-header-icon-color: #cbd5e1;
+  --clipboard-checked-color: #059669;
+  --filepath-text-color: #0f172a;
+}
+
+html {
+  @media (prefers-color-scheme: light) {
+    &:not([data-mode]),
+    &[data-mode='light'] {
+      @include tp-light;
+    }
+
+    &[data-mode='dark'] {
+      @include tp-dark;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode]),
+    &[data-mode='dark'] {
+      @include tp-dark;
+    }
+
+    &[data-mode='light'] {
+      @include tp-light;
+    }
+  }
+}
+
+/* ============================================================
+   Signature TechPulse 요소
+   ============================================================ */
+
+/* ── 사이드바 제목: 그라디언트 ─────────────────────────────── */
+#sidebar .site-title a {
+  background: linear-gradient(135deg, var(--heading-color) 25%, var(--tp-accent-hover) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+#sidebar .site-subtitle {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+}
+
+#avatar {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--tp-glow);
+  }
+}
+
+/* 사이드바 네비게이션 */
+#sidebar .nav-link {
+  border-radius: 8px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+#sidebar .sidebar-bottom .btn:hover {
+  color: var(--tp-accent-hover) !important;
+}
+
+/* ── 상단바: blur ───────────────────────────────────────────── */
+#topbar-wrapper {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+/* ── 포스트 카드: hover lift + cyan glow + 상단 그라디언트 바 ── */
+#post-list .card-wrapper {
+  .card {
+    border-radius: var(--tp-radius);
+    border: 1px solid var(--main-border-color);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0 0 auto;
+      height: 2px;
+      background: linear-gradient(90deg, var(--tp-accent), var(--tp-accent-2));
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      z-index: 1;
+    }
+  }
+
+  &:hover .card {
+    transform: translateY(-3px);
+    border-color: var(--tp-accent);
+    box-shadow: 0 8px 28px var(--tp-glow);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.card-title {
+  letter-spacing: -0.2px;
+}
+
+/* ── 태그 칩 ─────────────────────────────────────────────────── */
+.post-tag,
+#tags .tag,
+.post-meta .tag {
+  border-radius: 99px !important;
+  background: var(--tp-dim) !important;
+  color: var(--tp-accent) !important;
+  border: 1px solid var(--tag-border) !important;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  transition: background 0.15s, border-color 0.15s;
+
+  &:hover {
+    background: var(--tag-hover) !important;
+    border-color: var(--tp-accent) !important;
+    color: var(--tp-accent-hover) !important;
+  }
+}
+
+/* ── 본문 타이포그래피 ───────────────────────────────────────── */
+.post-content {
+  font-size: 1.02rem;
+  line-height: 1.82;
+
+  h2 {
+    border-bottom: 1px solid var(--main-border-color);
+    padding-bottom: 0.4rem;
+    letter-spacing: -0.3px;
+  }
+
+  a {
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+
+    &:hover {
+      color: var(--tp-accent-hover);
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid var(--tp-accent) !important;
+    background: var(--tp-dim);
+    border-radius: 0 8px 8px 0;
+    padding: 0.9rem 1.1rem !important;
+  }
+}
+
+h1.dynamic-title,
+.post h1 {
+  letter-spacing: -0.5px;
+}
+
+/* ── 코드블록: 상단 그라디언트 바 ────────────────────────────── */
+.post-content div[class^='language-'] {
+  border-radius: 10px;
+  border: 1px solid var(--main-border-color);
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, var(--tp-accent), var(--tp-accent-2), #ec4899);
+  }
+}
+
+:not(pre) > code {
+  border-radius: 5px;
+  padding: 0.15em 0.4em;
+}
+
+/* ── 검색창 포커스 링 ────────────────────────────────────────── */
+#search-input:focus,
+#search-wrapper:focus-within {
+  border-color: var(--tp-accent) !important;
+  box-shadow: 0 0 0 3px var(--tp-glow);
+}
+
+/* ── 스크롤바 ───────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dash-color);
+  border-radius: 99px;
+
+  &:hover {
+    background: var(--tp-accent);
+  }
+}
+
+::selection {
+  background: var(--tp-glow);
+}
+
+/* ============================================================
+   스케치 다이어그램 (인라인 SVG)
+   ============================================================ */
+
+.sketch {
+  margin: 2rem 0;
+  padding: 1.25rem 1rem 0.9rem;
+  background: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  border-radius: var(--tp-radius);
+  overflow-x: auto;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-width: 520px;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    margin-top: 0.85rem;
+    padding-top: 0.7rem;
+    border-top: 1px dashed var(--main-border-color);
+    font-size: 0.82rem;
+    color: var(--text-muted-color);
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+/* SVG 내부 요소 — 테마 토큰을 그대로 사용해 라이트/다크 모두 대응 */
+.sk-box {
+  fill: var(--main-bg);
+  stroke: var(--dash-color);
+  stroke-width: 1.5;
+}
+
+.sk-box-accent {
+  fill: var(--tp-dim);
+  stroke: var(--tp-accent);
+  stroke-width: 1.8;
+}
+
+.sk-box-muted {
+  fill: none;
+  stroke: var(--dash-color);
+  stroke-width: 1.3;
+  stroke-dasharray: 5 4;
+}
+
+.sk-label {
+  fill: var(--heading-color);
+  font-family: var(--tp-font-sans);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sk-sub {
+  fill: var(--text-muted-color);
+  font-family: var(--tp-font-sans);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.sk-mono {
+  fill: var(--tp-accent);
+  font-family: var(--tp-font-mono);
+  font-size: 11px;
+}
+
+.sk-title {
+  fill: var(--tp-accent);
+  font-family: var(--tp-font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sk-line {
+  stroke: var(--dash-color);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.sk-line-accent {
+  stroke: var(--tp-accent);
+  stroke-width: 1.8;
+  fill: none;
+}
+
+.sk-fill-accent {
+  fill: var(--tp-accent);
+}
+
+.sk-fill-muted {
+  fill: var(--dash-color);
+}
+
+@media (max-width: 576px) {
+  .sketch {
+    padding: 0.9rem 0.6rem 0.7rem;
+  }
+}
