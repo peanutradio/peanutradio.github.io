@@ -187,6 +187,59 @@ Actions를 못 쓰는 환경이라면 브라우저로 저장소 Actions 탭과 �
 
 ---
 
+## 5.5 사진 — IT News 글에는 가급적 넣는다
+
+사용자 요청 사항이다. **`IT News` 글에는 사진을 한 장 넣는 것을 기본으로 한다.**
+글 맨 위, 제목 바로 아래에 대표 이미지로 배치한다.
+
+### 🚨 기사 사진을 그대로 가져오지 않는다
+
+뉴스 기사에 붙은 사진은 대부분 **Getty / AP / Reuters / 매체 자체 촬영본**이고
+전부 라이선스가 걸려 있다. Getty는 무단 사용에 실제로 청구서를 보낸다.
+기사에 있다고 해서 쓸 수 있는 사진이 아니다.
+
+### 쓸 수 있는 것 — 이 순서로 찾는다
+
+**① 오픈 라이선스 (권장)**
+Wikimedia Commons에서 CC BY / CC BY-SA / CC0 / Public domain 을 찾는다.
+
+```bash
+curl -s "https://commons.wikimedia.org/w/api.php?action=query&generator=search\
+&gsrsearch=<검색어>&gsrnamespace=6&gsrlimit=5&prop=imageinfo\
+&iiprop=url|extmetadata&format=json"
+```
+응답의 `LicenseShortName`, `Artist`, `LicenseUrl`, `descriptionurl` 을 반드시 기록한다.
+
+> 매체 자체 행사 사진이 Commons에 CC로 올라와 있는 경우가 많다.
+> 예: TechCrunch가 자사 Disrupt 행사 사진을 CC BY 2.0으로 공개.
+
+**② 회사 공식 프레스·브랜드 자산** — 사용 조건을 확인한 경우만
+
+**③ 직접 그린 SVG** — 위 둘이 없으면 이게 답이다. 스케치가 사진보다 나은 경우도 많다
+
+### 저장과 표기
+
+```bash
+# 폭 1200, 품질 82로 재인코딩해서 저장
+sips -Z 1200 -s format jpeg -s formatOptions 82 원본.jpg \
+  --out assets/img/posts/{slug}.jpg
+```
+
+본문에는 이렇게 넣는다. **크레딧은 예외 없이 붙인다.**
+
+```markdown
+![대체 텍스트](/assets/img/posts/{slug}.jpg)
+_사진: [작가명](커먼즈 파일 페이지 URL), [라이선스명](라이선스 URL)_
+```
+
+**촬영 시점이 기사 내용과 다르면 캡션에 명시한다.** 독자가 현장 사진으로 오해하면 안 된다.
+
+```markdown
+_사진: [TechCrunch](...), [CC BY 2.0](...) — 2018년 Disrupt 현장 자료 사진_
+```
+
+---
+
 ## 6. Chirpy 문법 몇 가지
 
 ```markdown
@@ -213,6 +266,8 @@ Actions를 못 쓰는 환경이라면 브라우저로 저장소 Actions 탭과 �
 - ❌ 미래 날짜 `date`
 - ❌ 출처 없는 수치·인용
 - ❌ 자막·원문 없이 제목만 보고 요약
+- ❌ 기사에 실린 라이선스 사진(Getty·AP·Reuters·매체 촬영본)을 가져다 쓰기
+- ❌ 크레딧 없는 이미지
 - ❌ SVG에 색상 직접 지정
 - ❌ 배포 성공 확인 전에 링크 알리기
 - ❌ 외부 글을 그대로 옮기기 (요약·재구성만)
