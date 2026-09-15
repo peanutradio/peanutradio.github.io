@@ -164,13 +164,13 @@ kbd,
 
   /* Code — 검은 판에 흰 글자, 문자열만 노랑 */
   --language-border-color: #111111;
-  --highlight-bg-color: #111111;
-  --highlighter-rouge-color: #f4f1e4;
-  --highlight-lineno-color: #7a735e;
+  --highlight-bg-color: #fff9e3;
+  --highlighter-rouge-color: #1e1c16;
+  --highlight-lineno-color: #a89f88;
   --inline-code-bg: #fff2b8;
   --code-color: #14307f;
-  --code-header-text-color: #b9b3a2;
-  --code-header-muted-color: #2a2a2a;
+  --code-header-text-color: #6b6350;
+  --code-header-muted-color: #e8dcbc;
   --code-header-icon-color: #8a836e;
   --clipboard-checked-color: #ffd400;
   --filepath-text-color: #111111;
@@ -283,7 +283,7 @@ kbd,
 
   /* Code */
   --language-border-color: #f2efe3;
-  --highlight-bg-color: #0b0b0a;
+  --highlight-bg-color: #151515;
   --highlighter-rouge-color: #e7e3d6;
   --highlight-lineno-color: #6b6759;
   --inline-code-bg: rgb(255 212 0 / 16%);
@@ -318,6 +318,34 @@ html[data-mode='dark'] {
 
   @media (prefers-color-scheme: dark) {
     @include pop-dark;
+  }
+}
+
+/* 코드블록 안쪽 판.
+   Chirpy 의 rouge 테마가 .highlight 에 GitHub 색(#f6f8fa / #151515)을 직접 칠하기 때문에
+   토큰만 바꾸면 바깥 컨테이너만 바뀌고 안쪽은 그대로 남는다. 같은 특이도로 덮어쓴다. */
+
+:root[data-bs-theme='light'] .highlight,
+html[data-mode='light'] .highlight {
+  background-color: #fff9e3;
+}
+
+:root[data-bs-theme='dark'] .highlight,
+html[data-mode='dark'] .highlight {
+  background-color: #151515;
+}
+
+:root:not([data-bs-theme]) {
+  @media (prefers-color-scheme: light) {
+    .highlight {
+      background-color: #fff9e3;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .highlight {
+      background-color: #151515;
+    }
   }
 }
 
