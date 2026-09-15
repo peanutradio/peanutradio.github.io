@@ -295,27 +295,29 @@ kbd,
   --filepath-text-color: #fffdf2;
 }
 
-html {
-  @media (prefers-color-scheme: light) {
-    &:not([data-mode]),
-    &[data-mode='light'] {
-      @include pop-light;
-    }
+/* Chirpy 7.5 는 Bootstrap 5.3 색 모드를 쓴다 — 테마 토큰이
+   :root[data-bs-theme=light|dark] 에 정의된다 (특이도 0,2,0).
+   html[data-mode=...] (0,1,1) 로만 덮어쓰면 특이도에서 밀려 적용되지 않는다.
+   실제로 이전 테마 파일이 그 상태였다: 토큰 절반이 무시되고 있었다. */
 
-    &[data-mode='dark'] {
-      @include pop-dark;
-    }
+:root[data-bs-theme='light'],
+html[data-mode='light'] {
+  @include pop-light;
+}
+
+:root[data-bs-theme='dark'],
+html[data-mode='dark'] {
+  @include pop-dark;
+}
+
+/* 아직 색 모드가 정해지기 전(스크립트 실행 전)에는 시스템 설정을 따른다 */
+:root:not([data-bs-theme]) {
+  @media (prefers-color-scheme: light) {
+    @include pop-light;
   }
 
   @media (prefers-color-scheme: dark) {
-    &:not([data-mode]),
-    &[data-mode='dark'] {
-      @include pop-dark;
-    }
-
-    &[data-mode='light'] {
-      @include pop-light;
-    }
+    @include pop-dark;
   }
 }
 
