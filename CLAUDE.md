@@ -150,18 +150,18 @@ Actions를 못 쓰는 환경이라면 브라우저로 저장소 Actions 탭과 �
 |---|---|
 | `.sketch` | `<figure>` 래퍼 — 카드 배경·테두리·모바일 가로 스크롤 |
 | `.sk-box` | 기본 박스 |
-| `.sk-box-accent` | 강조 박스 (cyan 테두리 + 옅은 배경) |
+| `.sk-box-accent` | 강조 박스 (코발트 테두리 + 옅은 노랑 배경) |
 | `.sk-box-muted` | 점선 박스 — 대체되는 것, 사라질 것 |
 | `.sk-label` | 13px 굵은 라벨 |
 | `.sk-sub` | 11px 보조 텍스트 |
-| `.sk-mono` | 코드·식별자 (cyan, JetBrains Mono) |
+| `.sk-mono` | 코드·식별자 (코발트, IBM Plex Mono) |
 | `.sk-title` | 다이어그램 번호·제목 |
 | `.sk-line` / `.sk-line-accent` | 연결선 / 강조 연결선 |
 | `.sk-fill-muted` / `.sk-fill-accent` | 화살촉 마커 채우기 |
 
 **반드시 지킬 것**
 - `viewBox` 폭은 **720 고정**. 높이만 내용에 맞춘다
-- **색을 직접 쓰지 않는다.** `fill="#0ea5e9"` 같은 건 금지 — 다크/라이트 대응이 깨진다. `sk-*` 클래스만 쓴다
+- **색을 직접 쓰지 않는다.** `fill="#1b4dff"` 같은 건 금지 — 다크/라이트 대응이 깨진다. `sk-*` 클래스만 쓴다
 - marker `id`는 **다이어그램마다 다르게** (`xx-m1`, `yy-a2`…). 같은 페이지에서 충돌한다
 - `role="img"` + `aria-label` 필수
 - `<figcaption>`에는 그림 설명이 아니라 **그림이 말하는 주장**을 쓴다
