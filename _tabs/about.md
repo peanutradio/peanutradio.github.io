@@ -61,6 +61,21 @@ MCP로 도구를 붙이고, 여러 에이전트를 엮고, Microsoft Foundry와 
 - Modbus485 프로토콜로 센서 데이터를 수집하는 IoT 시스템 개발
 - PostgreSQL 데이터베이스 구축·운영, Node-RED·Tableau 대시보드 제작, Python 데이터 분석
 
+### Concentrix — Customer Service Specialist (Adobe Retention)
+*2022.04 ~ 2022.07*
+
+- Adobe 제품 고객 유지·계약 갱신 상담, 하루 평균 25~30건 처리
+
+---
+
+## 강의·교육
+
+| 시기 | 강의 | 대상 |
+|---|---|---|
+| 2026.09 | **AI 에이전트를 활용한 취업 컨설팅** — 서울시50플러스 남부캠퍼스 (실습 중심, 프롬프트 6종) | 중장년 취업 컨설턴트 |
+| 2026.06 | **AI 에이전트를 활용한 취업 컨설팅** — 서울시50플러스 중부캠퍼스 | 중장년 취업 컨설턴트 |
+| 2026.10 ~ | **영상 강의: 네트워크 기초 시리즈** — [TCP/IP 3D 강의](/posts/tcpip-3d-lecture/)부터 | 늦깎이 IT인·입문자 |
+
 ---
 
 ## 프로젝트
@@ -92,7 +107,7 @@ MCP로 도구를 붙이고, 여러 에이전트를 엮고, Microsoft Foundry와 
 
 ## 자격·교육
 
-- **Microsoft** AZ-900 (Azure Fundamentals), AI-900 (Azure AI Fundamentals)
+- **Microsoft** — AZ-900 (Azure Fundamentals), AI-900 (Azure AI Fundamentals), AI-901, DP-900 (Azure Data Fundamentals), SC-900 (Security, Compliance, and Identity Fundamentals), AB-900
 - **Google Analytics** Individual Qualification
 - **SQL 데이터 분석** (기초·심화)
 - 데이터 분석 전문가 과정 (국비, PLAYDATA · 2022.12 ~ 2023.06) — Python, 머신러닝, DB, 프로젝트 다수
