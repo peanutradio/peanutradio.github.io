@@ -2,7 +2,7 @@
 title: "OpenAI 아스트라와 '불투명 반복' — 에이전트를 만드는 입장에서 걱정되는 것"
 date: 2026-09-08 19:40:00 +0900
 categories: [IT News]
-tags: [openai, astra, ai-safety, chain-of-thought, agent, monitorability]
+tags: [openai, astra, ai-safety, chain-of-thought, ai-agent]
 description: 추론 과정을 언어 토큰으로 남기지 않는 모델이 나왔다. 성능 이야기보다, 에이전트를 굴리는 사람에게 무엇이 달라지는지가 중요하다.
 ---
 

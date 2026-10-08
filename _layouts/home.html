@@ -1,0 +1,163 @@
+---
+layout: default
+---
+
+{% comment %}
+  홈 대시보드 (Chirpy home 레이아웃 덮어쓰기)
+  - 1페이지: 대시보드 (소개·통계 / 최근 글 / 카테고리별 블록 / 자주 쓰는 태그)
+  - 2페이지 이후(/page2/ …): Chirpy 기본 글 목록을 그대로 보여준다 — 기존 링크가 404 나지 않도록.
+  카테고리 메타데이터는 _data/categories.yml
+{% endcomment %}
+
+{% include lang.html %}
+
+{% if paginator.page and paginator.page > 1 %}
+  {% include home-post-list.html %}
+{% else %}
+
+{% assign all_posts = site.posts | where_exp: 'item', 'item.hidden != true' %}
+{% assign total_posts = all_posts | size %}
+{% assign latest_post = all_posts | first %}
+{% assign hands_on = site.categories['Dev Notes'] | size %}
+{% assign tag_total = site.tags | size %}
+
+<div id="dash" class="dash">
+
+  <!-- ── Hero: 아이브로 → 두 줄 헤드라인(둘째 줄 형광펜) → 리드 → CTA → 주제 칩 ── -->
+  <section class="dash-hero" aria-label="블로그 소개">
+    <p class="dash-eyebrow"><span class="dot" aria-hidden="true"></span>AI AGENT · AZURE · COPILOT STUDIO</p>
+    <h1 class="dash-hero-title">
+      Microsoft 생태계 위에서<br>
+      <mark>AI 에이전트를 직접 만듭니다</mark>
+    </h1>
+    <p class="dash-hero-lead">MCP로 도구를 붙이고, 여러 에이전트를 엮고, Foundry와 Copilot Studio로 실제 업무에 굴러가는 물건을 만들며 부딪힌 기록 🛠</p>
+
+    <div class="dash-cta">
+      <a class="btn-pop btn-pop-ink" href="#dash-recent">📚 최근 글 보기</a>
+      <a class="btn-pop btn-pop-yellow" href="#dash-lectures">🎬 영상 강의</a>
+      <a class="btn-pop" href="{{ '/archives/' | relative_url }}">🗂 전체 아카이브</a>
+    </div>
+
+    <ul class="dash-catbar" aria-label="카테고리별 글 수">
+      {% for c in site.data.categories %}
+        {% assign c_size = site.categories[c.name] | size %}
+        <li>
+          <a href="{% if c.series %}#dash-lectures{% else %}#cat-{{ c.name | slugify }}{% endif %}">
+            <span aria-hidden="true">{{ c.emoji }}</span>
+            <span>{{ c.label | default: c.name }}</span>
+            <b>{{ c_size }}</b>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- ── 숫자 띠 ── -->
+  <section class="dash-stats" aria-label="블로그 숫자">
+    <div class="dash-stat"><span class="dash-stat-num">{{ total_posts }}</span><span class="dash-stat-label">전체 글</span></div>
+    <div class="dash-stat"><span class="dash-stat-num">{{ hands_on }}</span><span class="dash-stat-label">핸즈온 · Dev Notes</span></div>
+    <div class="dash-stat"><span class="dash-stat-num">{{ site.categories['Video Lectures'] | size }}</span><span class="dash-stat-label">영상 강의</span></div>
+    <div class="dash-stat"><span class="dash-stat-num dash-stat-date">{% if latest_post %}{{ latest_post.date | date: '%Y.%m.%d' }}{% else %}—{% endif %}</span><span class="dash-stat-label">마지막 업데이트</span></div>
+  </section>
+
+  <!-- ── 최근 글: 큰 카드 1 + 목록형 3 ── -->
+  <section class="dash-section" aria-labelledby="dash-recent">
+    <div class="dash-head">
+      <div>
+        <p class="dash-kicker">LATEST</p>
+        <h2 id="dash-recent" class="dash-h">최근 글</h2>
+        <p class="dash-sub">이번 주에 새로 쓴 것부터</p>
+      </div>
+      <a class="dash-more" href="{{ '/archives/' | relative_url }}">전체 글 보기 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="dash-recent">
+      {% for post in all_posts limit: 4 %}
+        {% assign pc = post.categories | first %}
+        {% assign meta = site.data.categories | where: 'name', pc | first %}
+        <a class="dash-recent-card{% if forloop.first %} is-featured{% endif %}" href="{{ post.url | relative_url }}">
+          <span class="dash-recent-emoji" aria-hidden="true">{{ meta.emoji | default: '📄' }}</span>
+          <span class="dash-recent-main">
+            <span class="dash-chip">{{ meta.label | default: pc }}{% if post.categories[1] %} · {{ post.categories[1] }}{% endif %}</span>
+            <span class="dash-recent-title">{{ post.title }}</span>
+            <span class="dash-recent-desc">{% include post-summary.html max_length=120 %}</span>
+            <span class="dash-date">{{ post.date | date: '%Y.%m.%d' }}</span>
+          </span>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- ── 영상 강의: 시리즈를 과정 카드로 ── -->
+  <section class="dash-section dash-section-ink" aria-labelledby="dash-lectures" id="dash-lectures-wrap">
+    <div class="dash-head">
+      <div>
+        <p class="dash-kicker">VIDEO LECTURES</p>
+        <h2 id="dash-lectures" class="dash-h">🎬 영상 강의 <small>시리즈별로 차례대로</small></h2>
+        <p class="dash-sub">주제별·시리즈별 강의. 1강부터 순서대로 보면 됩니다.</p>
+      </div>
+      <a class="dash-more" href="{{ '/categories/video-lectures/' | relative_url }}">강의 전체 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    {% assign lecture_posts = site.categories['Video Lectures'] %}
+    {% include series-cards.html posts=lecture_posts limit=4 %}
+  </section>
+
+  <!-- ── 카테고리별 ── -->
+  <section class="dash-section" aria-labelledby="dash-cats">
+    <div class="dash-head">
+      <div>
+        <p class="dash-kicker">BOARDS</p>
+        <h2 id="dash-cats" class="dash-h">카테고리</h2>
+        <p class="dash-sub">게시판마다 최신 3편</p>
+      </div>
+      <a class="dash-more" href="{{ '/categories/' | relative_url }}">카테고리 전체 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="dash-cats">
+      {% for c in site.data.categories %}
+        {% if c.series %}{% continue %}{% endif %}
+        {% assign c_posts = site.categories[c.name] %}
+        {% assign c_size = c_posts | size %}
+        {% capture c_url %}/categories/{{ c.name | slugify | url_encode }}/{% endcapture %}
+        <article class="dash-cat" id="cat-{{ c.name | slugify }}">
+          <header class="dash-cat-head">
+            <span class="dash-cat-icon" aria-hidden="true">{{ c.emoji }}</span>
+            <div class="dash-cat-meta">
+              <h3 class="dash-cat-name">{% if c_size > 0 %}<a href="{{ c_url | relative_url }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}</h3>
+              <p class="dash-cat-desc">{{ c.desc }}</p>
+            </div>
+            <span class="dash-count" title="글 수">{{ c_size }}</span>
+          </header>
+          {% if c_size > 0 %}
+            <ul class="dash-list">
+              {% for post in c_posts limit: 3 %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="dash-date">{{ post.date | date: '%m.%d' }}</span></li>
+              {% endfor %}
+            </ul>
+            <a class="dash-cat-more" href="{{ c_url | relative_url }}">더 보기 <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+          {% else %}
+            <p class="dash-empty">아직 올라온 글이 없습니다. 곧 채워집니다.</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- ── 자주 쓰는 태그 ── -->
+  <section class="dash-section" aria-labelledby="dash-tags">
+    <div class="dash-head">
+      <div>
+        <p class="dash-kicker">TAGS</p>
+        <h2 id="dash-tags" class="dash-h">자주 쓰는 태그</h2>
+      </div>
+      <a class="dash-more" href="{{ '/tags/' | relative_url }}">태그 전체 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    {% include tag-cloud.html limit=12 %}
+  </section>
+
+  <p class="dash-foot">
+    <a href="{{ '/archives/' | relative_url }}">🗂 아카이브에서 모든 글을 날짜순으로 보기</a>
+  </p>
+</div>
+
+{% endif %}

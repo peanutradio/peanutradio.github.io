@@ -1,0 +1,58 @@
+---
+layout: page
+# 카테고리 1개 페이지 (Chirpy category 레이아웃 덮어쓰기)
+# - _data/categories.yml 에 있는 최상위 카테고리: 머리 카드(이모지·설명·글 수)
+# - 시리즈가 있는 카테고리(Video Lectures): 시리즈 과정 카드
+# - 시리즈 페이지(2단계): "N강" 번호가 붙은 차례 목록
+---
+
+{% include lang.html %}
+
+{% assign meta = site.data.categories | where: 'name', page.title | first %}
+{% assign first_post = page.posts | last %}
+{% assign is_series = false %}
+{% if first_post.categories[1] == page.title %}{% assign is_series = true %}{% endif %}
+
+<div id="page-category" class="catpage-one">
+  <header class="dash-cat catone-head">
+    <div class="dash-cat-head">
+      <span class="dash-cat-icon" aria-hidden="true">{% if meta %}{{ meta.emoji }}{% elsif is_series %}🎬{% else %}📁{% endif %}</span>
+      <div class="dash-cat-meta">
+        {% if is_series %}<p class="dash-kicker">{{ first_post.categories[0] }} · SERIES</p>{% endif %}
+        <h1 class="dash-cat-name">{{ page.title }}{% if meta.label %} <small>{{ meta.label }}</small>{% endif %}</h1>
+        {% if meta.desc %}<p class="dash-cat-desc">{{ meta.desc }}</p>{% endif %}
+      </div>
+      <span class="dash-count" title="글 수">{{ page.posts | size }}</span>
+    </div>
+  </header>
+
+  {% if meta.series %}
+    <h2 class="dash-h catone-h">시리즈</h2>
+    {% include series-cards.html posts=page.posts %}
+    <h2 class="dash-h catone-h">전체 강의</h2>
+  {% endif %}
+
+  {% if is_series %}
+    {% assign eps = page.posts | reverse %}
+    <ol class="ep-list">
+      {% for post in eps %}
+        <li>
+          <a href="{{ post.url | relative_url }}">
+            <span class="ep-no">{{ forloop.index }}강</span>
+            <span class="ep-title">{{ post.title }}</span>
+            <span class="dash-date">{{ post.date | date: '%Y.%m.%d' }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <ul class="dash-list catone-list">
+      {% for post in page.posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="dash-date">{{ post.date | date: '%Y.%m.%d' }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

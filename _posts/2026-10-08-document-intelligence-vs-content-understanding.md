@@ -2,7 +2,7 @@
 title: "Document Intelligence vs Content Understanding — 문서 추출기 고르는 기준"
 date: 2026-10-08 06:51:00 +0900
 categories: [Azure AI]
-tags: [azure, document-intelligence, content-understanding, rag, foundry]
+tags: [azure, document-intelligence, content-understanding, rag, microsoft-foundry]
 description: 잘 도는 Document Intelligence는 두고, 변동 큰 문서·RAG·추론이 필요한 곳에 Content Understanding을 쓰라는 선택 가이드를 정리했다.
 ---
 

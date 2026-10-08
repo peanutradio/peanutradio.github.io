@@ -2,7 +2,7 @@
 title: "Aspire가 코딩 에이전트에게 앱 전체를 넘긴다 — aspire agent init"
 date: 2026-09-08 19:30:00 +0900
 categories: [IT News]
-tags: [aspire, copilot, coding-agent, opentelemetry, claude-code, dotnet]
+tags: [aspire, copilot, coding-agent, observability, claude, dotnet]
 description: 명령 한 줄로 컨테이너·프로세스·디버거를 다 띄우고, 그 통제권을 코딩 에이전트에게 넘긴다. aspire agent init이 실제로 하는 일.
 ---
 

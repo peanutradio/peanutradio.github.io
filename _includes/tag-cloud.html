@@ -1,0 +1,44 @@
+{%- comment -%}
+  태그 클라우드 — 글 수에 따라 글자 크기가 커진다 (tc-s1 ~ tc-s5).
+  인자:
+    limit  : 상위 N개만 (글 수 내림차순). 없으면 전부.
+    min    : 이 글 수 이상인 태그만.
+    max    : 이 글 수 이하인 태그만.
+    order  : 'count'(기본) | 'name'
+{%- endcomment -%}
+
+{%- assign _keys = '' | split: '' -%}
+{%- for t in site.tags -%}
+  {%- assign _n = t[1] | size -%}
+  {%- if include.min and _n < include.min -%}{%- continue -%}{%- endif -%}
+  {%- if include.max and _n > include.max -%}{%- continue -%}{%- endif -%}
+  {%- if include.order == 'name' -%}
+    {%- assign _key = t[0] -%}
+  {%- else -%}
+    {%- assign _key = 10000 | minus: _n | append: '::' | append: t[0] -%}
+  {%- endif -%}
+  {%- assign _keys = _keys | push: _key -%}
+{%- endfor -%}
+{%- assign _keys = _keys | sort_natural -%}
+{%- assign _limit = include.limit | default: 9999 -%}
+
+<ul class="tag-cloud">
+  {%- for k in _keys limit: _limit -%}
+    {%- if include.order == 'name' -%}
+      {%- assign _name = k -%}
+    {%- else -%}
+      {%- assign _name = k | split: '::' | last -%}
+    {%- endif -%}
+    {%- assign _n = site.tags[_name] | size -%}
+    {%- if _n >= 9 -%}{%- assign _s = 5 -%}
+    {%- elsif _n >= 5 -%}{%- assign _s = 4 -%}
+    {%- elsif _n >= 3 -%}{%- assign _s = 3 -%}
+    {%- elsif _n == 2 -%}{%- assign _s = 2 -%}
+    {%- else -%}{%- assign _s = 1 -%}{%- endif -%}
+    <li>
+      <a class="tc tc-s{{ _s }}" href="{{ _name | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+        <span class="tc-name">{{ _name }}</span><span class="tc-count">{{ _n }}</span>
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>

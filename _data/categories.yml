@@ -1,0 +1,36 @@
+# 홈 대시보드 · 카테고리 페이지에서 쓰는 최상위 카테고리 메타데이터.
+# 순서 = 화면에 보이는 순서. name 은 front matter 의 categories[0] 과 정확히 같아야 한다.
+# 새 최상위 카테고리는 사용자 승인 없이 추가하지 않는다 (CLAUDE.md §1).
+
+- name: AI Agent
+  emoji: "🤖"
+  icon: fas fa-robot
+  desc: MCP·A2A·멀티에이전트 설계 패턴
+
+- name: Azure AI
+  emoji: "☁️"
+  icon: fas fa-cloud
+  desc: Microsoft Foundry·Azure OpenAI·AI Search·RAG
+
+- name: Copilot Studio
+  emoji: "🧩"
+  icon: fas fa-puzzle-piece
+  desc: 로우코드 에이전트·M365 Copilot 확장
+
+- name: IT News
+  emoji: "📰"
+  icon: far fa-newspaper
+  desc: MS·GitHub·AI 업계 소식 재구성
+
+- name: Dev Notes
+  emoji: "📝"
+  icon: fas fa-terminal
+  desc: 트러블슈팅·환경 설정·직접 해 본 핸즈온
+
+# 2026-10-09 사용자 승인. 2단계 카테고리 [Video Lectures, 시리즈명] 으로 시리즈를 나눈다.
+- name: Video Lectures
+  emoji: "🎬"
+  label: 영상 강의
+  icon: fas fa-play-circle
+  desc: 주제별·시리즈별 영상 강의
+  series: true

@@ -2,7 +2,7 @@
 title: "MCP 서버를 처음 만들어봤다 — Python·TypeScript로 메모 도구 붙이기"
 date: 2026-10-04 23:30:00 +0900
 categories: [Dev Notes]
-tags: [mcp, python, typescript, vscode, github-copilot]
+tags: [mcp, python, typescript, vscode, copilot]
 description: 메모 폴더를 읽는 MCP 서버를 Python과 TypeScript로 각각 만들어 VS Code + GitHub Copilot 에이전트 모드에서 호출해봤다. 막혔던 에러와 고객사 구축 때 달라지는 점까지 정리했다.
 ---
 

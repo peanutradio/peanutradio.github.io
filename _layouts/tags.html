@@ -1,0 +1,20 @@
+---
+layout: page
+# 태그 페이지 — 글 수에 따라 크기가 다른 태그 클라우드 (Chirpy tags 레이아웃 덮어쓰기)
+---
+
+{% assign tag_total = site.tags | size %}
+
+<div class="tagpage">
+  <p class="tagpage-intro">태그 {{ tag_total }}개. 글자가 클수록 많이 쓴 태그입니다.</p>
+
+  <section class="tagpage-group">
+    <h2 class="dash-h">많이 쓴 태그 <small>2편 이상</small></h2>
+    {% include tag-cloud.html min=2 %}
+  </section>
+
+  <section class="tagpage-group">
+    <h2 class="dash-h">그 외 <small>가나다·ABC 순</small></h2>
+    {% include tag-cloud.html max=1 order='name' %}
+  </section>
+</div>

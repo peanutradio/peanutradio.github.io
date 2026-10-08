@@ -2,7 +2,7 @@
 title: "MS 9월 보안 업데이트 — 에이전트 트래픽까지 들어온 Zero Trust"
 date: 2026-09-27 10:00:00 +0900
 categories: [IT News]
-tags: [microsoft-security, zero-trust, purview, entra, defender, ai-agent]
+tags: [security, zero-trust, purview, entra, defender, ai-agent]
 description: Purview와 Entra Global Secure Access가 에이전트의 업로드까지 네트워크에서 막는 기능이 GA됐고, Defender에는 SIEM과 위협 보호를 합친 ISOC가 프리뷰로 나왔습니다.
 ---
 

@@ -2,7 +2,7 @@
 title: "삼성과 앤트로픽은 이미 세 겹으로 엮여 있다 — 투자·파운드리·엔터프라이즈"
 date: 2026-09-07 08:00:00 +0900
 categories: [IT News]
-tags: [anthropic, samsung, ai-chip, foundry, claude, 반도체]
+tags: [anthropic, samsung, ai-chip, semiconductor, claude]
 description: 앤트로픽의 자체 AI 칩 위탁생산 협상만 놓고 보면 절반만 보는 것이다. 투자·파운드리·엔터프라이즈 세 갈래를 한 줄로 세워봤다.
 ---
 

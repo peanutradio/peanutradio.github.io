@@ -119,6 +119,7 @@ exclude:
   - LICENSE
   - purgecss.js
   - "*.config.js"
+  - vendor
   - "package*.json"
 
 jekyll-archives:

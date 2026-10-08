@@ -1,0 +1,74 @@
+---
+layout: page
+# 카테고리 페이지 — 카테고리마다 카드 한 장 (Chirpy categories 레이아웃 덮어쓰기)
+# 카테고리 메타데이터: _data/categories.yml
+---
+
+{% include lang.html %}
+
+{% assign known = '' | split: '' %}
+
+<div class="catpage">
+  {% for c in site.data.categories %}
+    {% assign known = known | push: c.name %}
+    {% assign c_posts = site.categories[c.name] %}
+    {% assign c_size = c_posts | size %}
+    {% capture c_url %}/categories/{{ c.name | slugify | url_encode }}/{% endcapture %}
+
+    <section class="dash-cat catcard{% if c.series %} catcard-wide{% endif %}" id="cat-{{ c.name | slugify }}">
+      <header class="dash-cat-head">
+        <span class="dash-cat-icon" aria-hidden="true">{{ c.emoji }}</span>
+        <div class="dash-cat-meta">
+          <h2 class="dash-cat-name">
+            {% if c_size > 0 %}<a href="{{ c_url | relative_url }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}
+            {% if c.label %}<small>{{ c.label }}</small>{% endif %}
+          </h2>
+          <p class="dash-cat-desc">{{ c.desc }}</p>
+        </div>
+        <span class="dash-count" title="글 수">{{ c_size }}</span>
+      </header>
+
+      {% if c.series %}
+        {% include series-cards.html posts=c_posts %}
+        {% if c_size > 0 %}<a class="dash-cat-more" href="{{ c_url | relative_url }}">강의 전체 {{ c_size }}편 보기 <i class="fas fa-angle-right" aria-hidden="true"></i></a>{% endif %}
+      {% elsif c_size > 0 %}
+        <ul class="dash-list">
+          {% for post in c_posts limit: 5 %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <span class="dash-date">{{ post.date | date: '%Y.%m.%d' }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        <a class="dash-cat-more" href="{{ c_url | relative_url }}">{{ c.name }} 전체 {{ c_size }}편 보기 <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+      {% else %}
+        <p class="dash-empty">아직 올라온 글이 없습니다. 곧 채워집니다.</p>
+      {% endif %}
+    </section>
+  {% endfor %}
+
+  {% comment %} _data/categories.yml 에 없는 최상위 카테고리가 생기면 여기에 그대로 보여준다 {% endcomment %}
+  {% for category in site.categories %}
+    {% assign name = category | first %}
+    {% assign c_posts = category | last %}
+    {% assign first_post = c_posts | first %}
+    {% if name != first_post.categories[0] or known contains name %}{% continue %}{% endif %}
+    {% assign c_size = c_posts | size %}
+    {% capture c_url %}/categories/{{ name | slugify | url_encode }}/{% endcapture %}
+    <section class="dash-cat catcard">
+      <header class="dash-cat-head">
+        <span class="dash-cat-icon"><i class="far fa-folder fa-fw" aria-hidden="true"></i></span>
+        <div class="dash-cat-meta">
+          <h2 class="dash-cat-name"><a href="{{ c_url | relative_url }}">{{ name }}</a></h2>
+        </div>
+        <span class="dash-count">{{ c_size }}</span>
+      </header>
+      <ul class="dash-list">
+        {% for post in c_posts limit: 5 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="dash-date">{{ post.date | date: '%Y.%m.%d' }}</span></li>
+        {% endfor %}
+      </ul>
+      <a class="dash-cat-more" href="{{ c_url | relative_url }}">전체 보기 <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+    </section>
+  {% endfor %}
+</div>

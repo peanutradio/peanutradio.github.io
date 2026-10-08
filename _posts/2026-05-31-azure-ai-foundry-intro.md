@@ -2,7 +2,7 @@
 title: "Azure AI Foundry란 무엇인가 — RAG 구현 첫 인상"
 date: 2026-05-31 11:00:00 +0900
 categories: [Azure AI]
-tags: [azure, ai-foundry, rag, openai, microsoft]
+tags: [azure, microsoft-foundry, rag, openai, microsoft]
 ---
 
 ## Azure AI Foundry란?

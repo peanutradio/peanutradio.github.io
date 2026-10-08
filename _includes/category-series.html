@@ -1,0 +1,28 @@
+{%- comment -%}
+  2단계 카테고리(시리즈) 목록. 사용: include category-series.html posts=<카테고리 글 배열>
+  posts[*].categories[1] 을 시리즈 이름으로 본다.
+{%- endcomment -%}
+{%- assign _series = '' | split: '' -%}
+{%- for p in include.posts -%}
+  {%- assign _s = p.categories[1] -%}
+  {%- if _s -%}
+    {%- unless _series contains _s -%}{%- assign _series = _series | push: _s -%}{%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign _series = _series | sort_natural -%}
+
+<div class="cat-series">
+  <span class="cat-series-label"><i class="fas fa-layer-group fa-fw" aria-hidden="true"></i> 시리즈</span>
+  {%- if _series.size > 0 -%}
+    <ul class="cat-series-list">
+      {%- for s in _series -%}
+        <li>
+          <a href="{{ s | slugify | url_encode | prepend: '/categories/' | append: '/' | relative_url }}">{{ s }}</a>
+          <b>{{ site.categories[s] | size }}</b>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- else -%}
+    <span class="cat-series-empty">아직 시리즈가 없습니다</span>
+  {%- endif -%}
+</div>

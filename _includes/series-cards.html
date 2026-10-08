@@ -1,0 +1,43 @@
+{%- comment -%}
+  강의 시리즈 카드 (교육 과정 카드 형태). 인자: posts (Video Lectures 글 배열), limit (선택)
+  시리즈 = categories[1]. 시리즈마다: 커버(▶ + 시리즈명), 강의 수, 최신 강의, "시리즈 보기".
+{%- endcomment -%}
+{%- assign _series = '' | split: '' -%}
+{%- for p in include.posts -%}
+  {%- assign _s = p.categories[1] -%}
+  {%- if _s -%}{%- unless _series contains _s -%}{%- assign _series = _series | push: _s -%}{%- endunless -%}{%- endif -%}
+{%- endfor -%}
+{%- assign _limit = include.limit | default: 99 -%}
+
+{%- if _series.size > 0 -%}
+<div class="series-grid">
+  {%- for s in _series limit: _limit -%}
+    {%- assign _sp = site.categories[s] -%}
+    {%- assign _latest = _sp | first -%}
+    {%- assign _first = _sp | last -%}
+    {%- capture _url -%}/categories/{{ s | slugify | url_encode }}/{%- endcapture -%}
+    <article class="series-card">
+      <a class="series-cover" href="{{ _url | relative_url }}" aria-label="{{ s }} 시리즈 보기">
+        <span class="series-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+        <span class="series-kicker">SERIES · {{ _sp | size }}강</span>
+        <span class="series-name">{{ s }}</span>
+      </a>
+      <div class="series-body">
+        <p class="series-desc">{{ _latest.description | default: _latest.title | truncate: 90 }}</p>
+        <ol class="series-eps">
+          {%- assign _eps = _sp | reverse -%}
+          {%- for e in _eps limit: 3 -%}
+            <li><a href="{{ e.url | relative_url }}">{{ e.title }}</a></li>
+          {%- endfor -%}
+        </ol>
+        <div class="series-foot">
+          <span class="dash-date">업데이트 {{ _latest.date | date: '%Y.%m.%d' }}</span>
+          <a class="series-cta" href="{{ _first.url | relative_url }}">1강부터 보기 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </article>
+  {%- endfor -%}
+</div>
+{%- else -%}
+<p class="dash-empty">🎬 아직 공개된 강의가 없습니다. 첫 시리즈를 준비하고 있어요.</p>
+{%- endif -%}
