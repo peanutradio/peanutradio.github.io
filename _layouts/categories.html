@@ -9,13 +9,20 @@ layout: page
 {% assign known = '' | split: '' %}
 
 <div class="catpage">
+  {% assign group_started = false %}
   {% for c in site.data.categories %}
+    {% if c.news %}
+      <h2 class="catpage-group">{{ c.emoji }} IT 뉴스 <small>업계 소식을 읽고 실무 관점으로 다시 쓴 글</small></h2>
+    {% elsif group_started == false %}
+      {% assign group_started = true %}
+      <h2 class="catpage-group">🛠 주제별 기록 <small>직접 만들고 부딪히며 남긴 글</small></h2>
+    {% endif %}
     {% assign known = known | push: c.name %}
     {% assign c_posts = site.categories[c.name] %}
     {% assign c_size = c_posts | size %}
     {% capture c_url %}/categories/{{ c.name | slugify | url_encode }}/{% endcapture %}
 
-    <section class="dash-cat catcard{% if c.series %} catcard-wide{% endif %}" id="cat-{{ c.name | slugify }}">
+    <section class="dash-cat catcard{% if c.series or c.news %} catcard-wide{% endif %}" id="cat-{{ c.name | slugify }}">
       <header class="dash-cat-head">
         <span class="dash-cat-icon" aria-hidden="true">{{ c.emoji }}</span>
         <div class="dash-cat-meta">

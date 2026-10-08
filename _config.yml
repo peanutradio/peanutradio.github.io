@@ -55,7 +55,7 @@ assets:
 pwa:
   enabled: true
   cache:
-    enabled: true
+    enabled: false   # 2026-10-09: 서비스워커 캐시가 옛 화면을 계속 보여줘서 끔 (리뉴얼이 안 보이는 문제)
     deny_paths:
 
 paginate: 10
