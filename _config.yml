@@ -29,7 +29,7 @@ webmaster_verifications:
 
 analytics:
   google:
-    id:
+    id: G-FX33EZT2C4   # GA4 'Daniel Park Blog' 속성 (2026-10-09 사용자 생성)
 
 pageviews:
   provider:
