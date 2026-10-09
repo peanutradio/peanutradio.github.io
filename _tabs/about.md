@@ -124,3 +124,4 @@ MCP로 도구를 붙이고, 여러 에이전트를 엮고, Microsoft Foundry와 
 - 📧 [pch8303@gmail.com](mailto:pch8303@gmail.com)
 - 💼 [GitHub @peanutradio](https://github.com/peanutradio)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/chanhupark)
+- 🔒 [개인정보처리방침](/privacy/)
