@@ -9,11 +9,15 @@ description: 내 PC의 요청이 TCP/IP 4계층을 내려가 라우터를 지나
 
 **주소창에 주소를 치고 엔터를 누른 뒤 1초 안에 무슨 일이 벌어질까.** 「네트워크 기초」 시리즈 첫 편은 그 1초를 천천히 펼쳐 봅니다. 내 PC에서 보낸 요청이 TCP/IP 4계층을 내려가고, 라우터를 지나, 웹 서버에서 다시 올라가는 길을 3D로 따라가요. 약 4분, 5개 챕터이고 음성 해설이 함께 나옵니다.
 
+> 소리를 켜고 보세요.
+{: .prompt-tip }
+
 
 ## 강의 보기
 
-> 영상은 곧 다시 올라옵니다. 그동안 아래 정리로 먼저 살펴보세요.
-{: .prompt-warning }
+<video controls preload="metadata" playsinline poster="/assets/lectures/network-ep01/poster.jpg" style="width:100%;border-radius:12px">
+  <source src="/assets/lectures/network-ep01/network-ep01.mp4" type="video/mp4">
+</video>
 
 
 ## 오늘의 질문
