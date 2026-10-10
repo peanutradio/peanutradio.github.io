@@ -8,16 +8,15 @@ description: 실 전화기에서 시작해 우리 집 LAN, 동네와 도시를 �
 
 **네트워크는 약속대로 이어진 기기들이고, 인터넷은 그런 네트워크들의 네트워크입니다.** 이번 편은 이 한 문장을 실 전화기 하나로 시작해서 온 세상까지 넓혀 가며 보여 줍니다. 약 4분, 4개 챕터의 3D 강의예요.
 
-> 화면을 드래그하면 시점이 돌아가고, 휠로 확대·축소할 수 있어요. 소리를 켜고 보세요.
+> 소리를 켜고 보세요. 약 4분짜리 영상입니다.
 {: .prompt-tip }
 
 ## 강의 보기
 
-<div style="position:relative;width:100%;aspect-ratio:16/10;border-radius:12px;overflow:hidden">
-  <iframe src="/assets/lectures/network-ep02/" title="네트워크 기초 EP.02 3D 강의" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div>
+<video controls preload="metadata" playsinline poster="/assets/lectures/network-ep02/poster.jpg" style="width:100%;border-radius:12px">
+  <source src="/assets/lectures/network-ep02/network-ep02.mp4" type="video/mp4">
+</video>
 
-[🔎 전체 화면으로 보기](/assets/lectures/network-ep02/){: target="_blank" }
 
 ## 오늘의 질문
 
