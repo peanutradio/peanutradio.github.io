@@ -15,9 +15,10 @@ description: 내 PC의 요청이 TCP/IP 4계층을 내려가 라우터를 지나
 
 ## 강의 보기
 
-<video controls preload="metadata" playsinline poster="/assets/lectures/network-ep01/poster.jpg" style="width:100%;border-radius:12px">
-  <source src="/assets/lectures/network-ep01/network-ep01.mp4" type="video/mp4">
-</video>
+{% include embed/youtube.html id='ogKfUUWOv-w' %}
+
+> 📺 **Peanut Radio AI** 유튜브 채널에서 보기: [채널](https://www.youtube.com/channel/UCvVodonuWF9nFdEJBGZ6vUg) · [네트워크 기초 재생목록](https://www.youtube.com/playlist?list=PLXk7eX-lR6ys) — 구독하면 새 강의를 먼저 받아 볼 수 있어요.
+{: .prompt-info }
 
 
 ## 오늘의 질문

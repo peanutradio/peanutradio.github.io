@@ -13,9 +13,10 @@ description: 실 전화기에서 시작해 우리 집 LAN, 동네와 도시를 �
 
 ## 강의 보기
 
-<video controls preload="metadata" playsinline poster="/assets/lectures/network-ep02/poster.jpg" style="width:100%;border-radius:12px">
-  <source src="/assets/lectures/network-ep02/network-ep02.mp4" type="video/mp4">
-</video>
+{% include embed/youtube.html id='tboae5f_8as' %}
+
+> 📺 **Peanut Radio AI** 유튜브 채널에서 보기: [채널](https://www.youtube.com/channel/UCvVodonuWF9nFdEJBGZ6vUg) · [네트워크 기초 재생목록](https://www.youtube.com/playlist?list=PLXk7eX-lR6ys) — 구독하면 새 강의를 먼저 받아 볼 수 있어요.
+{: .prompt-info }
 
 
 ## 오늘의 질문
