@@ -2116,3 +2116,48 @@ section.dash-stats {
     border: 3px solid #111111;
   }
 }
+
+/* ── 2026-10-11 사용자 요청: 휴대폰(안드로이드)에서 노랑이 안 보임 ──
+   Chirpy 는 850px 미만에서 노란 사이드바를 숨기고(햄버거 메뉴) 크림색 상단바만 남긴다.
+   좁은 화면에서는 상단바를 노란 판으로 바꿔 데스크톱과 같은 인상을 준다. 다크 모드는 그대로. */
+@media (max-width: 849.98px) {
+  html:not([data-mode='dark']) #topbar-wrapper {
+    background: #ffd400;
+    border-bottom: 4px solid #111111;
+    box-shadow: 0 3px 0 #111111;
+
+    #topbar-title,
+    #sidebar-trigger,
+    #search-trigger,
+    .breadcrumb,
+    .breadcrumb a {
+      color: #111111 !important;
+    }
+
+    #topbar-title {
+      font-family: var(--pop-font-display, inherit);
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+
+    #sidebar-trigger,
+    #search-trigger {
+      width: 2.4rem;
+      height: 2.4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fffdf2;
+      border: 3px solid #111111;
+      border-radius: 12px;
+      box-shadow: 3px 3px 0 #111111;
+    }
+  }
+
+  /* 본문 첫머리에 노란 띠 한 줄 — 페이지 전체가 흰색으로만 보이지 않게 */
+  html:not([data-mode='dark']) #main-wrapper {
+    background-image: linear-gradient(#ffd400, #ffd400);
+    background-repeat: no-repeat;
+    background-size: 100% 10px;
+  }
+}
