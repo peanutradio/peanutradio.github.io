@@ -28,53 +28,8 @@ description: 전자부품 제조사의 PLM 핵심 기능 4가지(BOM 관리, 설
 
 ## 구성 — 전부 Microsoft 365 테넌트 안에서
 
-<figure class="sketch">
-<svg viewBox="0 0 720 300" role="img" aria-label="사용자가 Entra ID로 로그인해 Power Apps 앱을 쓰고, 데이터는 Dataverse, 문서는 SharePoint, 결재는 Power Automate와 Teams로 돌며, SAP 연결은 본 구축 때 게이트웨이로 붙인다">
-  <defs>
-    <marker id="plm-m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sk-fill-muted"/></marker>
-    <marker id="plm-m2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sk-fill-accent"/></marker>
-  </defs>
-  <text x="0" y="14" class="sk-title">① PoC 구성 — 실선은 이번에 만든 것, 점선은 본 구축 때 붙일 것</text>
-  <rect x="96" y="30" width="440" height="262" rx="10" class="sk-box"/>
-  <text x="108" y="50" class="sk-sub">Microsoft 365 테넌트 · Power Apps 개발자 환경</text>
-  <rect x="4" y="112" width="76" height="52" rx="8" class="sk-box-accent"/>
-  <text x="42" y="135" text-anchor="middle" class="sk-label">사용자</text>
-  <text x="42" y="152" text-anchor="middle" class="sk-sub">설계·개발</text>
-  <path d="M82,138 L122,138" class="sk-line" marker-end="url(#plm-m1)"/>
-  <rect x="126" y="108" width="120" height="60" rx="8" class="sk-box-accent"/>
-  <text x="186" y="132" text-anchor="middle" class="sk-label">Power Apps</text>
-  <text x="186" y="150" text-anchor="middle" class="sk-sub">모델 기반 앱</text>
-  <path d="M248,138 L288,138" class="sk-line" marker-end="url(#plm-m1)"/>
-  <rect x="292" y="108" width="100" height="60" rx="8" class="sk-box-accent"/>
-  <text x="342" y="132" text-anchor="middle" class="sk-label">Dataverse</text>
-  <text x="342" y="150" text-anchor="middle" class="sk-sub">품목·BOM·ECO</text>
-  <path d="M394,128 L424,128" class="sk-line-accent" marker-end="url(#plm-m2)"/>
-  <path d="M424,150 L394,150" class="sk-line-accent" marker-end="url(#plm-m2)"/>
-  <rect x="428" y="108" width="100" height="60" rx="8" class="sk-box-accent"/>
-  <text x="478" y="132" text-anchor="middle" class="sk-label">Power</text>
-  <text x="478" y="150" text-anchor="middle" class="sk-label">Automate</text>
-  <path d="M478,106 L478,76" class="sk-line" marker-end="url(#plm-m1)"/>
-  <rect x="428" y="56" width="100" height="22" rx="6" class="sk-box"/>
-  <text x="478" y="71" text-anchor="middle" class="sk-sub">Teams 결재</text>
-  <path d="M342,170 L342,212" class="sk-line" marker-end="url(#plm-m1)"/>
-  <rect x="282" y="216" width="120" height="52" rx="8" class="sk-box"/>
-  <text x="342" y="238" text-anchor="middle" class="sk-label">SharePoint</text>
-  <text x="342" y="256" text-anchor="middle" class="sk-sub">품목별 문서·버전</text>
-  <path d="M186,212 L186,170" class="sk-line" marker-end="url(#plm-m1)"/>
-  <rect x="126" y="216" width="120" height="52" rx="8" class="sk-box"/>
-  <text x="186" y="238" text-anchor="middle" class="sk-label">Entra ID</text>
-  <text x="186" y="256" text-anchor="middle" class="sk-sub">로그인·권한</text>
-  <path d="M530,138 L586,138" class="sk-line" stroke-dasharray="6 5" marker-end="url(#plm-m1)"/>
-  <rect x="590" y="70" width="126" height="196" rx="10" class="sk-box" stroke-dasharray="6 5"/>
-  <text x="653" y="92" text-anchor="middle" class="sk-sub">사내 시스템 (본 구축)</text>
-  <text x="653" y="128" text-anchor="middle" class="sk-label">게이트웨이</text>
-  <text x="653" y="160" text-anchor="middle" class="sk-label">SAP ERP</text>
-  <text x="653" y="192" text-anchor="middle" class="sk-label">MDM·ERP</text>
-  <text x="653" y="224" text-anchor="middle" class="sk-label">기존 PDM</text>
-  <text x="653" y="244" text-anchor="middle" class="sk-sub">1회 이관</text>
-</svg>
-<figcaption>PLM의 뼈대(데이터·화면·결재·문서)는 이미 가진 M365 안에서 다 돈다. 남는 건 바깥 시스템과의 연결이다.</figcaption>
-</figure>
+![PLM PoC 아키텍처 — Power Apps, Dataverse, Power Automate, SharePoint, Entra ID와 본 구축 때 붙일 사내 시스템](/assets/img/posts/power-platform-plm-poc/01-architecture.png)
+_실선은 이번 PoC에서 만든 것, 점선은 본 구축 때 붙일 연결. 번호는 데이터 흐름 순서다 (고객사·사내 시스템 이름은 일반 명칭으로 바꿈)_
 
 데이터는 이렇게 흐른다.
 
