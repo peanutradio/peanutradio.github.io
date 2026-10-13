@@ -22,7 +22,7 @@ Microsoft 생태계 위에서 **AI 에이전트를 직접 만드는** 사람의 
 
 ---
 
-## 1. 카테고리 — 6개. 이 밖으로 나가지 않는다
+## 1. 카테고리 — 7개. 이 밖으로 나가지 않는다
 
 | 카테고리 | 범위 |
 |---|---|
@@ -32,6 +32,7 @@ Microsoft 생태계 위에서 **AI 에이전트를 직접 만드는** 사람의 
 | `IT News` | 신기능·GA·릴리스·라이선스·비용 변화 등 **업계 소식 요약·재구성** |
 | `Dev Notes` | 트러블슈팅, 환경 설정, 짧은 실무 메모, **직접 한 핸즈온 기록** |
 | `Video Lectures` | 영상 강의 — 주제별·시리즈별 강의. **2단계 카테고리**로 시리즈를 나눈다: `categories: [Video Lectures, 시리즈명]` (예: `네트워크 기초`). 양식은 `_drafts/TEMPLATE-video-lecture.md`. 2026-10-09 사용자 승인으로 추가 |
+| `Power Platform` | Power Apps·Dataverse·Power Automate·SharePoint 통합 실무 — 업무 시스템(PLM 등) 구축·PoC 기록. **2단계**: `categories: [Power Platform, 주제]` (예: `PLM`). 고객사 사례는 반드시 익명화. 2026-10-13 사용자 승인으로 추가 |
 
 **어디에 넣을지 헷갈릴 때**
 
@@ -60,7 +61,7 @@ description: 한 문장 요약. 160자 이내.
 ---
 ```
 
-- `categories`는 위 6개 중 **하나만**. 대소문자·띄어쓰기까지 정확히. (예외: `Video Lectures` 는 `[Video Lectures, 시리즈명]` 2단계)
+- `categories`는 위 7개 중 **하나만**. 대소문자·띄어쓰기까지 정확히. (예외: `Video Lectures`·`Power Platform` 은 `[Video Lectures, 시리즈명]` 2단계)
 - `tags`는 소문자 영문 3~6개.
 
 ### 🚨 `date`를 반드시 현재 시각 이전으로
@@ -263,7 +264,7 @@ _사진: [TechCrunch](...), [CC BY 2.0](...) — 2018년 Disrupt 현장 자료 �
 
 ## 7. 하지 말 것
 
-- ❌ 위 6개 밖의 카테고리
+- ❌ 위 7개 밖의 카테고리
 - ❌ 미래 날짜 `date`
 - ❌ 출처 없는 수치·인용
 - ❌ 자막·원문 없이 제목만 보고 요약
