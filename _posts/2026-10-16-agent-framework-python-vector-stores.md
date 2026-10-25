@@ -76,6 +76,15 @@ description: Agent Framework Python이 Semantic Kernel의 벡터 스토어를 �
 
 원문에는 성능 수치가 없습니다. 저장소별 지연, 대용량에서의 동작, 압축된 작업 집합의 품질은 알 수 없고, 제가 직접 돌려 본 것도 아닙니다. 샘플은 `microsoft/agent-framework` 저장소의 `python/samples/02-agents/vector_stores`에 있으니, 도입 전에는 거기서 필터와 기록 검색 동작을 자기 데이터로 확인하는 것이 순서입니다. 에이전트 쓰기 도구(upsert, delete)를 붙일 때의 승인 설계는 [Durable Task 승인 설계 글](/posts/durable-task-real-world-boundaries/)과 함께 보면 도움이 됩니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.03 — LLM은 어떻게 말을 할까)
+
+{% include embed/youtube.html id='Ay9-NSw1wYI' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Vector Stores in Python Agent Framework: familiar foundations, streamlined for agents — Microsoft Agent Framework 블로그](https://devblogs.microsoft.com/agent-framework/vector-stores-in-python-agent-framework-familiar-foundations-streamlined-for-agents/)

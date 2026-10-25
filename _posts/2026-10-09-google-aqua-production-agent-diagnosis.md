@@ -92,6 +92,15 @@ AQuA는 자기 확신도 점수를 내지 않습니다. 대신 인사이트마�
 4. **판정 모델 보정 공수를 일정에 넣습니다.** 원문도 전문가 기준에 맞춘 보정을 "실제 엔지니어링 작업"이라고 부릅니다. 도입 계획에 도메인 담당자가 샘플을 직접 채점하는 시간을 따로 잡아 두지 않으면 결과를 믿기 어렵습니다.
 5. **강의에서는 '자동 수정 안 함'을 설계 선택으로 설명합니다.** 수정안을 제안만 하고 사람이 적용하는 구조는 [WinDbg MCP](/posts/windbg-mcp-ga/)가 실행 명령을 화면에 보여 주는 것과 같은 원칙입니다. 에이전트 운영 도구는 증거와 함께 사람에게 넘기는 지점이 있어야 한다는 점을 함께 묶어 가르치면 좋습니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.01 — AI 에이전트란?)
+
+{% include embed/youtube.html id='hVfiqgDm5gE' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [The outer loop: insights first — Google Developers Blog](https://developers.googleblog.com/the-outer-loop-insights-first-an-ambient-quality-agent-that-diagnoses-your-production-agent/)

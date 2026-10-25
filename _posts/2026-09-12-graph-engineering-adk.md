@@ -419,3 +419,13 @@ LLM 호출을 하나 더 쓰는 건 실제로 흔히 하는 실수인데, 그게
 - 영상: [Graph Engineering with ADK](https://www.youtube.com/watch?v=Mzr7byMFy_4) — Google Cloud Tech, 6분 9초
 - 실습: [ADK Codelab](https://codelabs.developers.google.com/adk2/instructions#0)
 - 문서: [adk.dev](https://adk.dev)
+
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.03 — LLM은 어떻게 말을 할까)
+
+{% include embed/youtube.html id='Ay9-NSw1wYI' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+

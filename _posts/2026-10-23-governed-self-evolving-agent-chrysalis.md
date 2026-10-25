@@ -66,6 +66,15 @@ description: Google의 Project Chrysalis는 장애 대응 에이전트가 전술
 - **도입 검토자:** 이 데모의 수치를 내부 보고서에 옮기지 마세요. 시뮬레이션이라는 단서를 반드시 같이 쓰세요.
 - **IT 강사:** "에이전트가 똑똑해질수록 통제는 필요 없다"는 오해를 풀 사례로 쓸 수 있습니다. 진화하는 쪽과 권한을 쥔 쪽을 분리해 보여 주세요.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.01 — AI 에이전트란?)
+
+{% include embed/youtube.html id='hVfiqgDm5gE' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - Google for Developers Blog, Architecting governed self-evolving AI agents (2026-10-22): https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/

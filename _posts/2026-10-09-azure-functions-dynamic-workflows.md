@@ -77,6 +77,15 @@ description: Azure Functions Hosted Skills의 Dynamic Workflows는 LLM이 DAG �
 
 수치가 인상적이지만 구조화된 보고서 작업에 한정된 측정이고, 원문도 자유 형식 작업에서는 다를 수 있다고 인정합니다. 그래서 "모든 에이전트에 쓰라"가 아니라, **도구 호출이 많고 순서를 미리 정할 수 있는 작업**에 후보로 두는 게 맞아 보입니다. 퍼블릭 프리뷰라 API가 바뀔 수 있다는 점도 감안해야 합니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.01 — AI 에이전트란?)
+
+{% include embed/youtube.html id='hVfiqgDm5gE' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Dynamic Workflows in Azure Functions Hosted Skills — Azure SDK Blog](https://devblogs.microsoft.com/azure-sdk/dynamic-workflows-azure-functions-hosted-skills/)

@@ -75,6 +75,15 @@ description: Microsoft가 공개한 AX 플레이북의 핵심은 에이전트가
 
 운영 중인 에이전트의 실패를 묶어 원인을 짚는 접근은 [AQuA 글](/posts/google-aqua-production-agent-diagnosis/)에서 다뤘습니다. AQuA가 운영 단계의 진단이라면 이 플레이북은 에이전트가 읽는 자료를 배포 전후에 평가하는 쪽입니다. 도구와 API를 에이전트가 어떻게 고르는지의 기본 개념은 [MCP와 API는 무엇이 다른가](/posts/mcp-vs-api/)에 있습니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.02 — 프롬프트 기본기 4가지)
+
+{% include embed/youtube.html id='p4lQMaqjMSM' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Introducing the Agent Experience (AX) Practitioner Playbook — Microsoft Developer Blog](https://developer.microsoft.com/blog/introducing-the-agent-experience-ax-practitioner-playbook/)

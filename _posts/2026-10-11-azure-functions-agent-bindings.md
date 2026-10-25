@@ -73,6 +73,15 @@ Agent bindings는 "에이전트 앱을 새로 만든다"가 아니라 **이미 �
 - 지연 시간과 품질은 원문에서 확인되지 않는다. 실제 성능은 직접 돌려 봐야 안다.
 - Durable 모드에서 결과 크기 제한 등 세부 사항은 원문에 없다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.04 — 도구 사용)
+
+{% include embed/youtube.html id='IRzqRJRRDFw' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Bring agentic reasoning to Python function apps with Azure Functions Agent bindings (preview)](https://devblogs.microsoft.com/azure-sdk/azure-functions-agent-binding/) — Azure SDK Blog, 2026-10-06

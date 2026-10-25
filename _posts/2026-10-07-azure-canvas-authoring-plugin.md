@@ -82,6 +82,15 @@ Azure 캔버스를 처음부터 손으로 짜지 않아도 된다. Copilot에 **
 4. **비용·라이선스는 글에 없다.** 글은 preview/GA 여부, Node·Copilot·Azure CLI 버전 요구 사항, 가격이나 라이선스를 밝히지 않는다. Copilot 구독 플랜에서 플러그인 기능을 쓸 수 있는지, 캔버스 호스트가 어떤 클라이언트인지는 도입 전에 문서로 확인할 항목이다.
 5. **강의에서는 '쓰기 전 미리보기' 패턴을 강조한다.** Container Apps 예제의 "구독 명시 선택 → 레플리카 변경 미리보기 → 적용"은 에이전트가 인프라를 만질 때의 기본 안전 패턴이다. 캔버스 자체보다 이 흐름을 프롬프트로 요구하는 습관을 가르치는 게 더 오래 남는다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.02 — 프롬프트 기본기 4가지)
+
+{% include embed/youtube.html id='p4lQMaqjMSM' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Build Azure Canvases with Canvas authoring](https://developer.microsoft.com/blog/build-azure-canvases-with-canvas-authoring/) — Microsoft Developer Blog, 2026-10-06

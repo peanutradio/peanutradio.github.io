@@ -139,6 +139,15 @@ ADK에서 **세션**은 메시지·도구 호출·결과가 모두 담긴 대화
 
 반대로 비어 있는 곳도 보였습니다. **재시도 한도**를 명시적으로 두지 않은 루틴이 있고, **LLM 판정**은 아직 거의 안 씁니다. 매일 아침 발행하는 글을 "출처가 붙었는가, 1인칭인가"로 다른 모델이 판정하게 하는 것부터 붙여 볼 생각입니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.01 — AI 에이전트란?)
+
+{% include embed/youtube.html id='hVfiqgDm5gE' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - Google Cloud Tech, "AI harness crash course" (2026-10-22): <https://www.youtube.com/watch?v=2C_CefSQEAQ>

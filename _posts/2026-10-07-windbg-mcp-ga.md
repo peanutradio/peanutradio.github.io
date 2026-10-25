@@ -109,6 +109,15 @@ WinDbg MCP는 AI 클라이언트가 **지금 열려 있는 WinDbg 세션**에 �
 
 MCP 서버를 직접 만들어 보는 쪽이라면 [첫 MCP 서버 기록](/posts/memo-mcp-first-server/)과 [MCP와 API의 차이](/posts/mcp-vs-api/)도 함께 보면 이 설계의 의미가 더 잘 보인다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.04 — 도구 사용)
+
+{% include embed/youtube.html id='IRzqRJRRDFw' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Introducing WinDbg MCP: Debug with natural language, grounded in evidence](https://devblogs.microsoft.com/performance-diagnostics/introducing-windbg-mcp-debug-with-natural-language-grounded-in-evidence/) — Microsoft Performance & Diagnostics Blog, 2026-10-06

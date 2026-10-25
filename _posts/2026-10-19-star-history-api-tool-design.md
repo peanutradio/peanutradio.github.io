@@ -71,6 +71,15 @@ description: GitHub 별 기록 API 재설계 사례를 읽고, 에이전트가 �
 - **Azure·M365 운영자**: 에이전트에 연결할 사내 API(예: 인사·재고 조회)에서 개인 식별 목록 대신 집계 엔드포인트를 따로 열면 노출 범위가 줄어듭니다. 도입 전 권한 모델과 함께 검토할 항목입니다.
 - **IT 강사**: "응답이 작으면 빠르다"는 직관이 틀릴 수 있다는 사례로 쓸 수 있습니다. 호출 횟수 비교 실습은 소개 수준으로만 안내하고, 실제 수치는 각자 환경에서 측정하도록 하는 것이 정확합니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.04 — 도구 사용)
+
+{% include embed/youtube.html id='IRzqRJRRDFw' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - Taylor Cuilty, Sarita Iyer, [From 2,500 requests to 24: Rebuilding star history without the stargazers](https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/) (GitHub Blog, 2026-10-14)

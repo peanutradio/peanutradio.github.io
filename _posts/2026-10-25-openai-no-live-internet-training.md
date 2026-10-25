@@ -86,6 +86,15 @@ Anthropic에 이어 OpenAI까지 같은 방향이면, 다른 연구소도 비슷
 
 전직 OpenAI 연구자 Steven Adler는 Fortune에 인터넷 차단 훈련이 연구팀을 데이터센터에 상주시켜야 할 만큼 부담이 크다고 말했다고 합니다. 훈련은 수천 명의 연구자가 만든 많은 자원과 도구에 의존하기 때문에, 샌드박스에 넣는 것만으로 끝나지 않는다는 것이 업계의 시각이었습니다. 이번 결정이 실제로 얼마나 지켜지는지는 지켜봐야 합니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 뉴스 60초 — 이 소식 쇼츠로 보기)
+
+{% include embed/youtube.html id='tNM2Za83uas' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [OpenAI says it will no longer train its AI models on the live internet, citing "significant risks" — TechCrunch](https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/)

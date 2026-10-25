@@ -70,6 +70,15 @@ MCP를 "API 대체"가 아니라 "운영 작업을 에이전트에 열어 주는
 
 Foundry로 에이전트를 먼저 만들어 보려면 [Foundry Agent Service로 첫 에이전트 만들기](/posts/foundry-first-agent/)를, MCP 서버를 에이전트에 붙이는 쪽은 [Copilot Studio에 MCP 서버 붙이기](/posts/copilot-studio-mcp-tools/)를 이어서 읽어 보세요.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.03 — LLM은 어떻게 말을 할까)
+
+{% include embed/youtube.html id='Ay9-NSw1wYI' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Build AI-powered apps without creating a vector database — Microsoft 365 Developer Blog (2026-10-13)](https://devblogs.microsoft.com/microsoft365dev/build-ai-powered-apps-without-creating-a-vector-database/)

@@ -89,6 +89,15 @@ AI 인시던트 어시스턴트(5번 사례)에서 원문이 제시한 규칙은
 
 원문 게시일이 소재 목록(10/9)과 본문(10/12)에서 다르게 보였고, 여기서는 본문 기준을 썼습니다. 구성 요소별 GA·프리뷰 상태는 원문에 없으므로 도입 전 공식 문서에서 확인해야 합니다. 원문 예시는 .NET이라 Python 중심의 Functions 글과 언어가 다릅니다. 원문은 후속으로 Durable Agents와 Durable Workflows(Microsoft Agent Framework 확장)를 다룰 예정이라고 합니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.01 — AI 에이전트란?)
+
+{% include embed/youtube.html id='hVfiqgDm5gE' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Durable Task in the Real World (.NET Blog, Tamir Dresher)](https://devblogs.microsoft.com/dotnet/durable-task-in-the-real-world/)

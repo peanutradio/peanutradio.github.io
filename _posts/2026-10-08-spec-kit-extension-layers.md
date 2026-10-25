@@ -92,6 +92,15 @@ description: GitHub Spec Kit을 포크하지 않고 조직 기준에 맞추는 �
 
 같은 시기 나온 [Canvas authoring 플러그인](/posts/azure-canvas-authoring-plugin/) 역시 마켓플레이스에서 플러그인을 설치하는 구조라, 카탈로그 통제 원칙을 함께 적용해 볼 만하다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.02 — 프롬프트 기본기 4가지)
+
+{% include embed/youtube.html id='p4lQMaqjMSM' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [From spec-first to enterprise-ready: extending GitHub Spec Kit — Microsoft Developer Blog](https://developer.microsoft.com/blog/from-spec-first-to-enterprise-ready-extending-github-spec-kit/) — 2026-10-07

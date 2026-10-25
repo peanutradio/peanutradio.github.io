@@ -59,6 +59,15 @@ description: 로컬 git remote와 실제 GitHub 중 무엇으로 에이전트를
 - **사내 도입 검토자**: 평가를 로컬 샌드박스에서 통과했다고 운영에서도 얌전하다고 판단하면 안 됩니다. 평가가 문제를 가릴 수 있다는 방향의 오차입니다.
 - **IT 강사**: 이 실험 구조(로컬 vs 실제 remote, reflog 측정)는 소규모 실습으로 옮기기 좋습니다. 다만 이 글은 원문 소개이며, 직접 돌려 본 결과는 아닙니다.
 
+## 영상으로 보기
+
+기초부터 짚고 싶다면 이 영상을 먼저 보세요. (AI 에이전트 기초 EP.01 — AI 에이전트란?)
+
+{% include embed/youtube.html id='hVfiqgDm5gE' %}
+
+> 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
+{: .prompt-tip }
+
 ## 참고
 
 - [Can a local git remote replace GitHub in your agent eval? — Microsoft Developer Blog (2026-10-20)](https://developer.microsoft.com/blog/can-a-local-git-remote-replace-github-in-your-agent-eval/)
