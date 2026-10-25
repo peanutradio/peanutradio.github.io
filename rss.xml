@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /rss.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 네이버 서치어드바이저용 RSS 2.0 (2026-10-25). Chirpy 기본 feed.xml(Atom)은 네이버 RSS 제출에서 오류 500 -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{{ site.title | xml_escape }}</title>
+  <link>{{ site.url }}/</link>
+  <description>{{ site.description | xml_escape }}</description>
+  <language>ko-KR</language>
+  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+  <atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml"/>
+  {% for post in site.posts limit:30 %}
+  <item>
+    <title>{{ post.title | xml_escape }}</title>
+    <link>{{ site.url }}{{ post.url }}</link>
+    <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+    <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+    {% for c in post.categories %}<category>{{ c | xml_escape }}</category>{% endfor %}
+    <description>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 300 | xml_escape }}</description>
+  </item>
+  {% endfor %}
+</channel>
+</rss>
