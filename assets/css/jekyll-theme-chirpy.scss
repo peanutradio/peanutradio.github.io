@@ -507,7 +507,7 @@ html[data-mode='dark'] .highlight {
 
   /* 대·중·소제목 크기를 확실히 구분한다 (2026-10-25 사용자 요청) */
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
     border-bottom: 3px solid var(--main-border-color);
     padding-bottom: 0.35rem;
     margin-top: 2.6rem;
@@ -515,7 +515,7 @@ html[data-mode='dark'] .highlight {
   }
 
   h3 {
-    font-size: 1.32rem;
+    font-size: 1.42rem;
     font-weight: 700;
     margin-top: 2rem;
     padding-left: 0.6rem;
@@ -530,8 +530,8 @@ html[data-mode='dark'] .highlight {
   }
 
   @media (max-width: 576px) {
-    h2 { font-size: 1.5rem; }
-    h3 { font-size: 1.2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.28rem; }
     h4 { font-size: 1.05rem; }
   }
 
