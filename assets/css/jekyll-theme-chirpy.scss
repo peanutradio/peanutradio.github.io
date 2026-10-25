@@ -505,15 +505,34 @@ html[data-mode='dark'] .highlight {
   font-size: 1.02rem;
   line-height: 1.85;
 
+  /* 대·중·소제목 크기를 확실히 구분한다 (2026-10-25 사용자 요청) */
   h2 {
+    font-size: 1.75rem;
     border-bottom: 3px solid var(--main-border-color);
     padding-bottom: 0.35rem;
+    margin-top: 2.6rem;
     letter-spacing: -0.02em;
   }
 
   h3 {
+    font-size: 1.32rem;
     font-weight: 700;
+    margin-top: 2rem;
+    padding-left: 0.6rem;
+    border-left: 6px solid var(--pop-yellow);
     letter-spacing: -0.01em;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 576px) {
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+    h4 { font-size: 1.05rem; }
   }
 
   a {
