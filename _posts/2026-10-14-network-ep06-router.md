@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.06 — 라우터, 길을 알려 주는 교차로"
 date: 2026-10-14 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, router, routing-table, default-gateway, lecture]
+tags: [networking, lecture]
 description: 갈림길마다 서 있는 길 안내 담당 라우터를 라우팅 테이블, 기본 게이트웨이, 홉과 우회까지 3D 지도 위에서 따라가는 약 3분 강의와 정리.
 ---
 

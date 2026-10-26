@@ -2,7 +2,7 @@
 title: "Sovereign Cloud 연속선 — Foundry Local GA 예고와 상태별 정리"
 date: 2026-10-21 06:51:00 +0900
 categories: [IT News]
-tags: [sovereign-cloud, foundry-local, azure-local, confidential-computing, ignite]
+tags: [azure, foundry, security]
 description: MS가 Sovereign Cloud를 통제 수준의 연속선으로 정리했다. 외부 키 관리 GA, Foundry Local GA 예고 등 항목을 상태별로 구분해 읽는다.
 ---
 

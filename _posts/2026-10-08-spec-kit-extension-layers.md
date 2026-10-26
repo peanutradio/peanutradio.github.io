@@ -2,7 +2,7 @@
 title: "Spec Kit 확장 구조 — 프리셋·확장·번들·워크플로로 키우는 조직용 스펙 주도 개발"
 date: 2026-10-08 06:49:00 +0900
 categories: [AI Agent]
-tags: [spec-kit, spec-driven-development, ai-agent, github, governance]
+tags: [github, ai-agent, governance]
 description: GitHub Spec Kit을 포크하지 않고 조직 기준에 맞추는 네 겹의 확장 구조와 두 층 카탈로그, 도입 순서를 정리했다.
 ---
 

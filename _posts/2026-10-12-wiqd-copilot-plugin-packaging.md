@@ -2,7 +2,7 @@
 title: "wiqd로 Copilot 플러그인 배포하기 — 검증 통과가 끝이 아니다"
 date: 2026-10-12 06:53:00 +0900
 categories: [Copilot Studio]
-tags: [wiqd, copilot-plugin, mcp, microsoft-365, agent-plugins]
+tags: [devops, copilot, mcp, microsoft-365, ai-agent]
 description: Work IQ Developer Tools(wiqd)로 Copilot 플러그인을 가져와 패키징하고 테넌트에 공유하는 흐름과, 운영자가 따로 챙겨야 할 지점을 정리했다.
 ---
 

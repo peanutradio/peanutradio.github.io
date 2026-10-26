@@ -2,7 +2,7 @@
 title: "그래프 엔지니어링 — 거대 프롬프트가 환각하는 진짜 이유와 그 구조적 처방"
 date: 2026-09-12 09:10:00 +0900
 categories: [AI Agent]
-tags: [ai-agent, graph-engineering, google-adk, orchestration, workflow]
+tags: [ai-agent, automation]
 description: 프롬프트 하나에 전부 담은 에이전트는 왜 자신 있게 거짓말을 하는가. Google ADK 2.0의 팬아웃·조인·라우터 세 패턴으로 LLM 호출 1회짜리 멀티에이전트 워크플로를 만드는 법.
 ---
 

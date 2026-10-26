@@ -2,7 +2,7 @@
 title: "'에이전틱 OS' 논쟁 — Windows는 사람과 에이전트를 함께 섬길 수 있나"
 date: 2026-09-27 09:50:00 +0900
 categories: [IT News]
-tags: [windows, agentic-os, ai-agent, copilot, microsoft]
+tags: [ai-agent, copilot]
 description: 에이전틱 OS라는 한 문장에 반발이 쏟아진 지 10개월. Windows 수장은 표현을 바꿨지만 방향은 그대로고, OS라는 단어는 이제 Copilot이 가져갔습니다.
 ---
 

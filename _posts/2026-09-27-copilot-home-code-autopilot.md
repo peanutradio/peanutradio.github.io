@@ -2,7 +2,7 @@
 title: "Microsoft Copilot 개편 — Home, Code, Autopilot 세 갈래로"
 date: 2026-09-27 09:40:00 +0900
 categories: [IT News]
-tags: [copilot, microsoft-365, autopilot, ai-agent, managed-runtime]
+tags: [copilot, microsoft-365, ai-agent, azure]
 description: 9월 25일 Microsoft가 새 Copilot을 발표했습니다. Chat과 Cowork를 합친 Home, 자연어로 앱을 만드는 Code, 알아서 계속 일하는 Autopilot, 그리고 이들을 떠받치는 Managed Runtime을 정리합니다.
 ---
 

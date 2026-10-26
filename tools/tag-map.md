@@ -36,3 +36,15 @@
 - 먼저 기존 태그에서 고른다: `ai-agent`, `copilot`, `azure`, `mcp`, `github`, `microsoft`, `microsoft-foundry`, `rag`, `claude`, `security`, `observability`, `workflow`, `orchestration`, `google-adk`, `llm`, `openai`
 - 제품명은 정식 표기 (`microsoft-365`, `microsoft-foundry`, `microsoft-fabric`)
 - 한글 태그 금지, 복수형 금지
+
+---
+
+## 2026-10-26 통합 — 태그 23개로 고정 (애드센스 재심사 대비)
+
+애드센스 불승인('정책 위반 발견', 10/25) 점검에서 사이트맵 325개 중 228개가 태그 페이지였고, 태그 171개가 글 1편에만 쓰였다.
+글 하나짜리 목록 화면이 사이트 대부분을 차지해 '가치가 별로 없는 화면'으로 보일 수 있어 정리했다 (사용자 승인 msg 4307).
+
+- 허용 태그 23개: `ai-agent` `mcp` `copilot` `copilot-studio` `microsoft-365` `azure` `foundry` `security` `identity` `governance` `rag` `llm` `openai` `claude` `github` `devops` `power-platform` `automation` `observability` `cost` `networking` `lecture` `hands-on`
+- 세부 태그 → 상위 태그로 합침 (예: `tcp`·`dns`·`router` → `networking`, `entra-id`·`sso` → `identity`, `azure-openai`·`document-intelligence` → `foundry`). 어디에도 안 맞는 태그(`samsung`, `techcrunch`, `microsoft` 등)는 뺐다.
+- 태그 페이지(/tags/이름/)와 홈 2쪽 이후는 `noindex, follow` (`_includes/metadata-hook.html`), 사이트맵은 직접 만든 `sitemap.xml`(글·카테고리·고정 페이지만).
+- 결과: 고유 태그 222 → 23, 사이트맵 325 → 약 90.

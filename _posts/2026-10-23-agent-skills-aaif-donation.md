@@ -2,7 +2,7 @@
 title: "Agent Skills, Linux Foundation 산하 AAIF로 — SKILL.md가 한 회사 것이 아니게 됐다"
 date: 2026-10-23 06:49:00 +0900
 categories: [IT News]
-tags: [agent-skills, skill-md, aaif, linux-foundation, ai-agent]
+tags: [ai-agent, claude]
 description: Anthropic이 Agent Skills 표준을 Agentic AI Foundation에 기증했다. SKILL.md 폴더 형식이 도구를 넘나드는 공용 포맷이 된다는 뜻과 운영자가 확인할 점을 정리했다.
 ---
 

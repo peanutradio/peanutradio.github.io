@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.09 — 연결을 맺고 끊기, 전화 예절로 배우는 TCP"
 date: 2026-10-20 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, tcp, handshake, retransmission, lecture]
+tags: [networking, lecture]
 description: 여보세요로 시작하는 전화 예절처럼 TCP가 3-way로 연결을 맺고, 4-way로 예의 있게 끊고, 안 들리면 다시 보내는 과정을 따라가는 약 2분 강의와 정리.
 ---
 

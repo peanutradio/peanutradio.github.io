@@ -56,13 +56,15 @@ Microsoft 생태계 위에서 **AI 에이전트를 직접 만드는** 사람의 
 title: "제목 — 60자 이내"
 date: 2026-09-07 08:10:00 +0900
 categories: [AI Agent]
-tags: [mcp, api, ai-agent]
+tags: [mcp, ai-agent]
 description: 한 문장 요약. 160자 이내.
 ---
 ```
 
 - `categories`는 위 7개 중 **하나만**. 대소문자·띄어쓰기까지 정확히. (예외: `Video Lectures`·`Power Platform` 은 `[Video Lectures, 시리즈명]` 2단계)
-- `tags`는 소문자 영문 3~6개.
+- `tags`는 **아래 23개 중에서만 2~5개** 고른다 (2026-10-26 애드센스 재심사 대비 정리. 새 태그를 만들면 글 1편짜리 빈 태그 페이지가 늘어난다).
+  `ai-agent` `mcp` `copilot` `copilot-studio` `microsoft-365` `azure` `foundry` `security` `identity` `governance` `rag` `llm` `openai` `claude` `github` `devops` `power-platform` `automation` `observability` `cost` `networking` `lecture` `hands-on`
+  - 매핑표: `tools/tag-map.md` 맨 아래 '2026-10-26 통합'
 
 ### 🚨 `date`를 반드시 현재 시각 이전으로
 

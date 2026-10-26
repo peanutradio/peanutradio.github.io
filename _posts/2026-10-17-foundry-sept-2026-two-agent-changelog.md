@@ -2,7 +2,7 @@
 title: "Foundry 9월 업데이트를 에이전트 두 개로 읽기 — Routines·Tool Search"
 date: 2026-10-17 06:53:00 +0900
 categories: [Azure AI]
-tags: [foundry, routines, tool-search, model-router, ai-agent]
+tags: [foundry, automation, ai-agent]
 description: Foundry 9월 업데이트의 Routines·Tool Search GA와 Model Router·Insights 프리뷰를 변경 이력 에이전트 예제 하나로 엮어 읽고, 도입 전 확인할 점을 정리했다.
 ---
 

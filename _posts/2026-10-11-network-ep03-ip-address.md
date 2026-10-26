@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.03 — IP 주소, 인터넷 세상의 집 주소"
 date: 2026-10-11 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, ip-address, ipv4, nat, lecture]
+tags: [networking, lecture]
 description: 택배 주소와 아파트 동·호수, 정문 경비실 비유로 IP 주소의 생김새, 사설 IP와 공인 IP, NAT까지 3D로 따라가는 약 3분 강의와 정리.
 ---
 

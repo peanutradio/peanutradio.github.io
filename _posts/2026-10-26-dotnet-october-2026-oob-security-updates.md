@@ -2,7 +2,7 @@
 title: ".NET 10월 긴급(OOB) 보안 업데이트 — 8.0.33·9.0.22·10.0.14로 올리기 전 점검"
 date: 2026-10-26 06:51:00 +0900
 categories: [IT News]
-tags: [dotnet, security, brotli, cve, container]
+tags: [security]
 description: .NET 8·9·10에 Brotli 버퍼 오버플로 등을 고친 긴급 보안 업데이트가 나왔다. 배포 방식(런타임·자체 포함·컨테이너)별로 무엇을 바꿔야 하는지 정리했다.
 ---
 

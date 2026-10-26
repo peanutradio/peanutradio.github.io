@@ -2,7 +2,7 @@
 title: "GPT-6 Astra·Sol·Luna, Foundry에서 단가와 배포 옵션 정리"
 date: 2026-10-25 06:49:00 +0900
 categories: [IT News]
-tags: [gpt-6, foundry, azure-openai, pricing, model-selection]
+tags: [llm, foundry, cost]
 description: Microsoft Foundry에 올라온 GPT-6 Astra, Sol, Luna의 역할과 100만 토큰당 단가, 배포 옵션을 정리하고 모델을 나눠 쓰는 기준을 해석했다.
 ---
 

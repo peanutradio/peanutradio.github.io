@@ -2,7 +2,7 @@
 title: "GitHub Git 인프라 후속편 — 참조 단위 쿼럼과 가상 복제본"
 date: 2026-10-22 06:53:00 +0900
 categories: [IT News]
-tags: [github, git, infrastructure, azure, agents]
+tags: [github, azure, ai-agent]
 description: GitHub가 Git 쓰기 병목을 참조(ref) 단위 쿼럼으로, 읽기 확장을 가상 복제본으로 푼 방식을 정리한다. 프로덕션 배포 범위는 글에 명시되지 않았다.
 ---
 

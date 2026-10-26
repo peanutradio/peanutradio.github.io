@@ -2,7 +2,7 @@
 title: "Copilot Studio에 MCP 서버 붙이기 — 카탈로그 연결과 직접 등록 두 가지"
 date: 2026-10-12 11:55:00 +0900
 categories: [Copilot Studio]
-tags: [copilot-studio, mcp, tools, microsoft-learn, ai-agent]
+tags: [copilot-studio, mcp, ai-agent]
 description: Microsoft Learn Docs MCP를 Copilot Studio 에이전트에 연결해 공식 문서를 검색하고 출처 링크까지 달아 답하게 했다. 카탈로그에서 고르는 법과 내 MCP 서버 주소를 직접 넣는 화면을 순서대로 정리했다.
 ---
 

@@ -2,7 +2,7 @@
 title: "OpenAI 모델과 Codex, Google Cloud Model Garden에 — 프리뷰 단계"
 date: 2026-10-24 06:53:00 +0900
 categories: [IT News]
-tags: [openai, google-cloud, model-garden, codex, multi-cloud, azure]
+tags: [openai, llm, azure]
 description: OpenAI가 GPT-6 계열과 Codex를 Google Cloud에 낸다. 비공개 프리뷰이고 GA는 수주 내 예고다. Azure 사용 조직이 짚을 점을 정리했다.
 ---
 

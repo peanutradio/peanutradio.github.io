@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.11 — HTTPS, 주소창 자물쇠의 비밀"
 date: 2026-10-22 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, https, tls, encryption, certificate, lecture]
+tags: [networking, security, lecture]
 description: 엽서처럼 다 보이던 HTTP에 자물쇠 상자(암호화)와 신분증(인증서)을 더한 HTTPS. 열쇠를 안전하게 나누는 방법까지 따라가는 약 2분 강의와 정리.
 ---
 

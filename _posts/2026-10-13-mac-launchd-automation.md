@@ -2,7 +2,7 @@
 title: "맥미니에서 launchd로 매일 도는 자동화 만들기 — cron 대신 쓰는 이유와 함정"
 date: 2026-10-13 11:55:00 +0900
 categories: [Dev Notes]
-tags: [macos, launchd, automation, cron, python]
+tags: [automation, hands-on]
 description: 블로그 강의 글을 매일 아침 8시에 자동 발행하는 잡을 launchd로 걸었다. 원격 스케줄러를 포기한 이유, plist 구성, 로그 남기는 법, 그리고 실제로 겪은 StartInterval·RunAtLoad·PATH 함정을 정리했다.
 ---
 

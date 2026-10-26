@@ -2,7 +2,7 @@
 title: "Agent Framework 벡터 스토어 — 검색을 도구로, 대화 기록까지 검색 대상으로"
 date: 2026-10-16 06:53:00 +0900
 categories: [AI Agent]
-tags: [agent-framework, vector-store, rag, python, semantic-kernel]
+tags: [ai-agent, rag, automation]
 description: Agent Framework Python이 Semantic Kernel의 벡터 스토어를 옮겨 왔다. 검색을 에이전트 도구로 노출하고 긴 대화는 검색 가능한 기록으로 빼는 구조를 정리한다.
 ---
 

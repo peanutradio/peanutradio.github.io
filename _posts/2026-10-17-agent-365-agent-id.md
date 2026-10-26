@@ -2,7 +2,7 @@
 title: "Agent 365와 Agent ID 정리 — 에이전트에게도 '사원증'이 필요한 이유"
 date: 2026-10-17 13:40:00 +0900
 categories: [Copilot Studio]
-tags: [agent-365, agent-id, entra-id, purview, defender, ai-governance]
+tags: [copilot, identity, security, governance]
 description: John Savill의 Agent 365 개요 영상을 바탕으로 Agent ID(블루프린트·에이전트 ID·에이전트 사용자)의 구조, 토큰 흐름, Entra·Purview·Defender가 에이전트를 다루는 방식, 레지스트리와 컬렉션을 정리했다.
 ---
 

@@ -2,7 +2,7 @@
 title: "Anthropic의 증류 공격 방어 — API 사용자에게 달라진 점"
 date: 2026-10-25 06:51:00 +0900
 categories: [IT News]
-tags: [anthropic, claude, distillation, api, security]
+tags: [claude, llm, security]
 description: Anthropic이 증류 공격 방어책을 공개했다. 추론 기록 접근 제한과 차단 요청 과금 등 API를 쓰는 조직이 알아야 할 변화를 정리했다.
 ---
 

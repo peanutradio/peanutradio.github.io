@@ -2,7 +2,7 @@
 title: "Copilot Studio로 사내 IT FAQ 에이전트 만들기 — 파일 하나를 지식으로"
 date: 2026-10-11 11:55:00 +0900
 categories: [Copilot Studio]
-tags: [copilot-studio, knowledge, faq, ai-agent, hands-on]
+tags: [copilot-studio, rag, ai-agent, hands-on]
 description: FAQ PDF 하나를 지식으로 올려 문서 안의 내용으로만 답하는 헬프데스크 에이전트를 만들었다. 실제 화면 순서대로 정리하고, 크레딧 오류로 막혔던 지점과 해결까지 적었다.
 ---
 

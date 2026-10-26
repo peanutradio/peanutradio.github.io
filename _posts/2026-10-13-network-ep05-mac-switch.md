@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.05 — MAC 주소와 스위치, 같은 동네 안에서 찾아가기"
 date: 2026-10-13 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, mac-address, switch, arp, lecture]
+tags: [networking, lecture]
 description: 기기마다 하나뿐인 이름 MAC 주소, 같은 층의 반장님 스위치, "이 주소 누구예요?" ARP까지 3D로 따라가는 약 3분 반 강의와 정리.
 ---
 

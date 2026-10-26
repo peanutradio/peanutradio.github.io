@@ -2,7 +2,7 @@
 title: "GitHub의 '앰비언트 인텔리전스' — 의도, 하니스, 컨트롤 플레인 세 겹"
 date: 2026-10-18 06:53:00 +0900
 categories: [IT News]
-tags: [github, copilot, agent, mcp, hooks, logitech]
+tags: [github, copilot, ai-agent, mcp, claude]
 description: GitHub이 10월 15일 글에서 제시한 개발자 인터페이스 세 겹 모델을 읽고, 자동 실행 범위와 증거 요구를 정하는 질문으로 재구성했다.
 ---
 

@@ -2,7 +2,7 @@
 title: "에이전트도 '내부자'다 — MS Security가 말하는 Guardian Agents"
 date: 2026-10-20 06:53:00 +0900
 categories: [IT News]
-tags: [security, ai-agent, guardian-agents, microsoft-security, governance]
+tags: [security, ai-agent, governance]
 description: Microsoft Security가 사내 에이전트를 신뢰 대상이 아닌 내부자로 보고 실행 전에 감독하라고 제안했다. 주장의 뼈대와 운영자가 가져갈 점을 정리했다.
 ---
 

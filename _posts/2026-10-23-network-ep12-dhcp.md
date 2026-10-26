@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.12 — DHCP, 이사 오면 주소를 자동으로"
 date: 2026-10-23 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, dhcp, ip-address, lease, lecture]
+tags: [networking, lecture]
 description: 새 기기가 손을 들면 공유기가 IP 주소를 자동으로 빌려 주는 DHCP. 자동 주소 배정, 임대 기간, 주소 충돌 방지를 따라가는 약 2분 반 강의와 정리.
 ---
 

@@ -2,7 +2,7 @@
 title: "Fabric IQ, Copilot Chat·Cowork에서 GA — FabCon 발표를 상태별로 읽기"
 date: 2026-10-26 06:53:00 +0900
 categories: [IT News]
-tags: [fabric, copilot, power-bi, fabcon, database-hub]
+tags: [copilot, power-platform]
 description: FabCon Europe 발표 중 Copilot Chat·Cowork의 Fabric IQ 근거 답변이 GA다. 프리뷰·예정 항목과 구분해, 관리자가 먼저 확인할 설정을 정리했다.
 ---
 

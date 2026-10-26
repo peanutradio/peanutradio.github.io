@@ -2,7 +2,7 @@
 title: "Azure DevOps Autofix가 에이전트로 바뀐다 — 알림에서 수정 PR까지"
 date: 2026-10-22 06:51:00 +0900
 categories: [IT News]
-tags: [azure-devops, copilot, autofix, security, ai-agent]
+tags: [devops, copilot, security, ai-agent]
 description: Azure DevOps의 Copilot Autofix가 코딩 에이전트 기반으로 바뀌어 의존성 취약점과 서드파티 스캔 알림까지 수정 PR을 만든다. 제한 프리뷰 단계의 변화를 정리했다.
 ---
 

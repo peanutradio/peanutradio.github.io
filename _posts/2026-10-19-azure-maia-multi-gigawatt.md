@@ -2,7 +2,7 @@
 title: "Azure Maia, 2027년부터 멀티 기가와트로 — 추론 전용 칩이 Copilot 비용에 주는 의미"
 date: 2026-10-19 06:49:00 +0900
 categories: [IT News]
-tags: [azure, maia, inference, copilot, foundry]
+tags: [azure, foundry, copilot]
 description: 마이크로소프트가 자체 AI 칩 Maia 200을 가동 중이고 Maia 300을 2027년에 투입한다고 밝혔다. 발표 내용과 운영자가 지켜볼 점을 정리했다.
 ---
 

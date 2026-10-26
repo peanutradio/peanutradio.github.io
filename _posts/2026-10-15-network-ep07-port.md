@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.07 — 포트, 한 집에 문이 여러 개"
 date: 2026-10-15 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, port, tcp-ip, security, lecture]
+tags: [networking, security, lecture]
 description: 창구가 여러 개인 건물 비유로 포트 번호, 80·443·22번 문, IP 주소와 포트의 조합, 열린 문과 닫힌 문까지 3D로 따라가는 약 3분 강의와 정리.
 ---
 

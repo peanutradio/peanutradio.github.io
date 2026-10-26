@@ -2,7 +2,7 @@
 title: "MS가 사내 AI 전환에서 배운 5가지 — '도구 보급'은 전환이 아니다"
 date: 2026-10-08 08:40:00 +0900
 categories: [IT News]
-tags: [microsoft, ai-transformation, copilot, ai-agent, frontier-company]
+tags: [governance, copilot, ai-agent]
 description: Microsoft가 자기 회사를 첫 고객(Customer Zero)으로 삼아 AI 전환을 하며 배운 다섯 가지 교훈을 정리했다. 영업·공급망·엔지니어링 사례와 수치, 고객에게 권하는 세 가지 패턴까지.
 ---
 

@@ -2,7 +2,7 @@
 title: "Claude Haiku 5.5 — 소형 모델에 effort가 생기고 가격은 크게 내렸다"
 date: 2026-10-09 06:53:00 +0900
 categories: [IT News]
-tags: [claude, haiku, llm, pricing, ai-agent]
+tags: [claude, llm, cost, ai-agent]
 description: Anthropic이 10/7 공개한 Haiku 5.5는 Haiku급 최초로 effort 설정을 넣었고 입력 $0.10, 출력 $0.50(10만 토큰 이하)으로 가격을 낮췄다.
 ---
 

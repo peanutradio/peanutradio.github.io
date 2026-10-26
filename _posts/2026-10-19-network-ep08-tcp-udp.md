@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.08 — TCP와 UDP, 등기우편과 엽서의 차이"
 date: 2026-10-19 08:09:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, tcp, udp, transport-layer, lecture]
+tags: [networking, lecture]
 description: 확인 도장을 받는 등기우편 TCP와 넣으면 끝인 엽서 UDP를 순서 번호, 다시 보내기, 쓰임새로 비교하는 약 3분 강의와 정리.
 ---
 

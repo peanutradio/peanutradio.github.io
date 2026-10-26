@@ -1,3 +1,11 @@
+<!-- 2026-10-26 애드센스 재심사 대비: 글 목록만 있는 화면(태그별·홈 2쪽 이후)은 검색 색인에서 제외, 링크는 따라가게 -->
+{%- assign noindex = false -%}
+{%- if page.layout == 'tag' -%}{%- assign noindex = true -%}{%- endif -%}
+{%- if paginator.page > 1 -%}{%- assign noindex = true -%}{%- endif -%}
+{%- if noindex -%}
+<meta name="robots" content="noindex, follow">
+{%- endif -%}
+
 <!-- Pop Sticker 디자인 시스템 웹폰트
      Black Han Sans (제목) + IBM Plex Sans KR (본문) + IBM Plex Mono (코드) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -2,7 +2,7 @@
 title: "SSO는 어떻게 한 번 로그인으로 여러 앱을 여나 — SAML과 OIDC 흐름 정리"
 date: 2026-10-17 11:10:00 +0900
 categories: [Dev Notes]
-tags: [sso, saml, oidc, entra-id, authentication]
+tags: [identity, hands-on]
 description: ByteByteGo의 SSO 설명 영상을 바탕으로 SAML 로그인 흐름, 두 번째 앱에서 로그인이 생략되는 이유, SAML과 OIDC의 차이를 정리하고 Entra ID 관점의 실무 포인트를 더했다.
 ---
 

@@ -2,7 +2,7 @@
 title: "Azure Functions Agent bindings — 코드가 주도하고 추론은 한 단계만"
 date: 2026-10-11 06:53:00 +0900
 categories: [AI Agent]
-tags: [azure-functions, ai-agent, agent-framework, durable-functions, python]
+tags: [azure, ai-agent, automation]
 description: Azure Functions Agent bindings(프리뷰)는 기존 Python 함수에 경계가 있는 추론 한 단계를 끼운다. Dynamic Workflows와 반대 방향의 설계를 비교한다.
 ---
 

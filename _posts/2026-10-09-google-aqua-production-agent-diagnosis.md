@@ -2,7 +2,7 @@
 title: "AQuA — 운영 중인 에이전트의 실패를 묶고 코드 줄까지 짚는 진단 에이전트"
 date: 2026-10-09 06:51:00 +0900
 categories: [AI Agent]
-tags: [ai-agent, evaluation, observability, google-adk, aqua]
+tags: [ai-agent, governance, observability]
 description: Google이 공개한 AQuA는 운영 세션을 샘플링해 실패를 묶고 검증한 뒤 근본 원인을 코드 줄 범위로 짚는 오픈소스 참조 구현이다.
 ---
 

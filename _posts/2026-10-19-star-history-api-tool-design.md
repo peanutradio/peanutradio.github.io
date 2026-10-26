@@ -2,7 +2,7 @@
 title: "2,500번 요청을 24번으로 — 응답이 작아도 작업은 싸지 않다는 API 설계"
 date: 2026-10-19 06:53:00 +0900
 categories: [AI Agent]
-tags: [api, tool-design, github, agent, pagination]
+tags: [ai-agent, github, devops]
 description: GitHub 별 기록 API 재설계 사례를 읽고, 에이전트가 호출하는 도구의 API를 어떻게 설계할지 정리했다.
 ---
 

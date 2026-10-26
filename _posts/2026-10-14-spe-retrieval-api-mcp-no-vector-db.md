@@ -2,7 +2,7 @@
 title: "벡터 DB 없이 RAG — SharePoint Embedded Retrieval API와 spe-mcp"
 date: 2026-10-14 06:53:00 +0900
 categories: [AI Agent]
-tags: [rag, sharepoint-embedded, mcp, retrieval-api, copilot]
+tags: [rag, microsoft-365, mcp, copilot]
 description: 임베딩·벡터 저장소·권한 동기화를 직접 만들지 않고 Retrieval API로 권한이 반영된 근거 데이터를 가져오는 방식과, 설정을 맡기는 spe-mcp 서버 정리.
 ---
 

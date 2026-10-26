@@ -2,7 +2,7 @@
 title: "Durable Task가 해 주는 일, 해 주지 않는 일 — 에이전트 승인 설계"
 date: 2026-10-13 06:53:00 +0900
 categories: [AI Agent]
-tags: [durable-task, ai-agent, orchestration, idempotency, human-in-the-loop]
+tags: [ai-agent, devops]
 description: Durable Task는 어디까지 진행했는지는 기억하지만 바깥 세상의 결과는 모른다. 에이전트 워크플로에서 직접 설계해야 할 승인·조정·장애 테스트 규칙을 정리했다.
 ---
 

@@ -2,7 +2,7 @@
 title: "Canvas authoring 플러그인 — Azure 캔버스를 Copilot이 만들어 준다"
 date: 2026-10-07 07:17:00 +0900
 categories: [AI Agent]
-tags: [copilot, azure, canvas, plugin, ai-agent]
+tags: [copilot, azure, power-platform, ai-agent]
 description: Copilot 플러그인 Canvas authoring으로 Microsoft Canvas Toolkit 기반 Azure 캔버스 프로젝트를 생성하는 과정을 정리한다.
 ---
 

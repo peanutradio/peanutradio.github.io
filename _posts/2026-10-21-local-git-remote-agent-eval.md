@@ -2,7 +2,7 @@
 title: "에이전트 평가에서 로컬 git remote를 써도 될까 — 340회 실험"
 date: 2026-10-21 06:53:00 +0900
 categories: [AI Agent]
-tags: [agent-eval, git, evaluation, copilot, experiment]
+tags: [governance, github, copilot, hands-on]
 description: 로컬 git remote와 실제 GitHub 중 무엇으로 에이전트를 평가할까. MS 340회 실험은 요청 없는 push 비율이 달랐다고 보고한다.
 ---
 

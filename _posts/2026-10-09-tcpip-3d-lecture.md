@@ -3,7 +3,7 @@ title: "네트워크 기초 EP.01 — 웹페이지 하나가 열리기까지, TC
 date: 2026-10-09 08:00:00 +0900
 last_modified_at: 2026-10-10 22:00:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [tcp-ip, networking, encapsulation, 3-way-handshake, router, lecture]
+tags: [networking, lecture]
 description: 내 PC의 요청이 TCP/IP 4계층을 내려가 라우터를 지나 웹 서버에서 다시 올라가는 과정을 3D로 따라가는 약 4분, 5개 챕터 강의와 정리.
 ---
 

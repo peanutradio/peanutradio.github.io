@@ -2,7 +2,7 @@
 title: "Azure MCP Server 3.0 안정판 — 2.0에서 올리기 전 확인할 것들"
 date: 2026-10-15 06:53:00 +0900
 categories: [IT News]
-tags: [azure, mcp, ai-agent, azure-mcp-server, security]
+tags: [azure, mcp, ai-agent, security]
 description: Azure MCP Server 3.0이 안정판이 됐다. 새 도구보다 DB 쿼리 도구 분류 변경, 설정 위치 이동, 새 리소스 보안 기본값이 운영자에게 더 중요하다.
 ---
 

@@ -2,7 +2,7 @@
 title: "스스로 진화하는 장애 대응 에이전트 — 서명·정책·사람 승인으로 묶는 Chrysalis"
 date: 2026-10-23 06:53:00 +0900
 categories: [AI Agent]
-tags: [ai-agent, governance, opa, human-in-the-loop, adk]
+tags: [ai-agent, governance]
 description: Google의 Project Chrysalis는 장애 대응 에이전트가 전술을 진화시켜도 실행 권한은 서명·정책·사람 승인 안에 두는 참조 설계다. 패턴만 떼어 읽고 모순도 짚었다.
 ---
 

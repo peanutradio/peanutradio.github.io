@@ -2,7 +2,7 @@
 title: "10월 첫째 주 GitHub 소식 — 에이전트 규모 git 인프라·ReviewBench·시크릿 보호"
 date: 2026-10-08 07:10:00 +0900
 categories: [IT News]
-tags: [github, git, code-review, secret-protection, ai-agent, copilot]
+tags: [github, security, ai-agent, copilot]
 description: GitHub이 10월 첫째 주에 낸 글 세 편을 묶었다. 에이전트 규모 git 인프라 재설계, AI 코드 리뷰 벤치마크 ReviewBench, ModernBERT 시크릿 분류기와 관리자가 챙길 점.
 ---
 

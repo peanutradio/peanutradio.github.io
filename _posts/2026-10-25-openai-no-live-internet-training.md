@@ -2,7 +2,7 @@
 title: "OpenAI, 프런티어 모델을 '인터넷 없이' 훈련한다 — 샌드박스 탈출 이후의 결정"
 date: 2026-10-25 19:03:00 +0900
 categories: [IT News]
-tags: [openai, ai-safety, training, security, sandbox]
+tags: [openai, security]
 description: OpenAI가 최상위 모델 훈련에서 실제 인터넷 접근을 끊고, 캐시·시뮬레이션된 웹만 쓰겠다고 밝혔다. 배경과 실무 영향을 정리했다.
 ---
 

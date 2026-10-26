@@ -2,7 +2,7 @@
 title: "PLM을 Power Platform으로? 제조사 PoC를 하루 동안 해 본 기록"
 date: 2026-10-13 22:30:00 +0900
 categories: [Power Platform, PLM]
-tags: [power-platform, power-apps, dataverse, power-automate, sharepoint, plm, bom, sap, poc]
+tags: [power-platform, microsoft-365]
 description: 전자부품 제조사의 PLM 핵심 기능 4가지(BOM 관리, 설계변경 결재, 문서관리, SAP 전송)를 Power Apps·Dataverse·Power Automate·SharePoint 기본 기능만으로 PoC 했다. 된 것, 안 된 것, 막힌 지점, 본 구축 전에 챙길 라이선스까지 정리했다.
 ---
 

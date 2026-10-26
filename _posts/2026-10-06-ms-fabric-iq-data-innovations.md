@@ -2,7 +2,7 @@
 title: "Fabric IQ가 Copilot 안으로 — MS 9월 데이터 발표 정리"
 date: 2026-10-06 13:30:00 +0900
 categories: [IT News]
-tags: [microsoft-fabric, copilot, power-bi, sql-server, ai-agent]
+tags: [copilot, power-platform, azure, ai-agent]
 description: Microsoft가 9월 28일 데이터 신기능을 발표했다. Fabric IQ가 Copilot Chat·Cowork에서 GA됐고, Database Hub·Agentic Data Engineering·SQL Server on Azure Local 등이 함께 나왔다.
 ---
 

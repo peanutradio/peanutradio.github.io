@@ -2,7 +2,7 @@
 title: "Azure OpenAI 비용 줄이는 세 가지 — 프롬프트 캐싱, Batch, PTU 고르는 기준"
 date: 2026-10-12 18:55:00 +0900
 categories: [Azure AI]
-tags: [azure-openai, foundry, cost, ptu, batch]
+tags: [foundry, cost, azure]
 description: 같은 모델이라도 배포 방식과 호출 방식에 따라 비용이 크게 달라진다. 프롬프트 캐싱·Global Batch·PTU를 언제 쓰는지 Foundry 포털의 실제 화면과 공식 문서 기준으로 정리했다.
 ---
 

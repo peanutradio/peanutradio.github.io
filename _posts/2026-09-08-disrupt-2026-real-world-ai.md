@@ -2,7 +2,7 @@
 title: "TechCrunch Disrupt 2026, 피지컬 AI 전용 무대를 만들었다"
 date: 2026-09-08 19:45:00 +0900
 categories: [IT News]
-tags: [techcrunch, disrupt, physical-ai, robotics, nvidia, edge-ai]
+tags: [llm, azure]
 description: 로봇과 자율 하드웨어만 다루는 스테이지가 새로 생겼다. 세션 주제를 보면 소프트웨어 에이전트와 겹치는 문제가 많다.
 ---
 

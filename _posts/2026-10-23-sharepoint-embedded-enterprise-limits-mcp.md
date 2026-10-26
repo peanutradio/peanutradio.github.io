@@ -2,7 +2,7 @@
 title: "SharePoint Embedded 엔터프라이즈 업데이트 — 분당 12,000 RU와 MCP 서버(프리뷰)"
 date: 2026-10-23 06:51:00 +0900
 categories: [IT News]
-tags: [sharepoint-embedded, microsoft-365, graph-api, mcp, throttling]
+tags: [microsoft-365, mcp, azure]
 description: SharePoint Embedded가 앱·테넌트당 분당 12,000 RU 한도, 최소 권한 가이드, 코딩 에이전트용 MCP 서버(프리뷰)를 정리했다. 운영 전 확인할 점을 짚는다.
 ---
 

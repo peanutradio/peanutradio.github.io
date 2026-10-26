@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.04 — DNS, 이름을 주소로 바꾸는 전화번호부"
 date: 2026-10-12 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, dns, domain, cache, lecture]
+tags: [networking, azure, lecture]
 description: 휴대폰 연락처 비유로 도메인 이름, DNS 서버에게 묻는 과정, 루트에서 .com을 거쳐 찾아가는 길과 캐시까지 3D로 따라가는 약 3분 강의와 정리.
 ---
 

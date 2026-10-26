@@ -2,7 +2,7 @@
 title: "WinDbg MCP 정식 출시 — 자연어 디버깅, 실행한 명령은 눈에 보인다"
 date: 2026-10-07 07:15:00 +0900
 categories: [AI Agent]
-tags: [mcp, windbg, debugging, microsoft, ai-agent]
+tags: [mcp, observability, ai-agent]
 description: WinDbg 1.2610.1001.0부터 GA된 MCP 서버. AI가 호출한 디버거 동작을 WinDbg에서 그대로 확인할 수 있게 설계한 점이 핵심이다.
 ---
 

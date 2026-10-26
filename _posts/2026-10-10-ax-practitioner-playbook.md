@@ -2,7 +2,7 @@
 title: "AX 실무자 플레이북 — 코딩 에이전트가 틀리면 모델 말고 문서를 고쳐라"
 date: 2026-10-10 06:53:00 +0900
 categories: [AI Agent]
-tags: [ai-agent, agent-experience, evaluation, mcp, documentation]
+tags: [ai-agent, governance, mcp]
 description: Microsoft가 공개한 AX 플레이북의 핵심은 에이전트가 낡은 코드를 내놓으면 모델이 아니라 에이전트가 읽는 문서·도구·스킬을 평가하고 고치라는 것이다.
 ---
 

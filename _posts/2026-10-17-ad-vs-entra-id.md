@@ -2,7 +2,7 @@
 title: "Active Directory vs Entra ID — 'AD의 클라우드 버전'이 아닌 이유"
 date: 2026-10-17 14:15:00 +0900
 categories: [Dev Notes]
-tags: [entra-id, active-directory, conditional-access, hybrid-identity, zero-trust]
+tags: [identity, security]
 description: ITProGuides의 5분 영상을 바탕으로 Active Directory와 Entra ID의 프로토콜·구조·정책·보안 경계 차이와, 하이브리드 환경에서 동기화 방향 때문에 자주 생기는 실수를 정리했다.
 ---
 

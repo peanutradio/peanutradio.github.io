@@ -1,0 +1,25 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}
+  2026-10-26: jekyll-sitemap 기본 사이트맵 대신 직접 만든다.
+  태그 페이지(/tags/이름/)·홈 2쪽 이후는 글 목록뿐인 얇은 화면이라 뺀다(애드센스 '가치 없는 화면' 대비).
+{%- endcomment -%}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ '/' | absolute_url }}</loc></url>
+  {%- for p in site.tabs %}
+  <url><loc>{{ p.url | absolute_url }}</loc></url>
+  {%- endfor %}
+  <url><loc>{{ '/privacy/' | absolute_url }}</loc></url>
+  {%- for c in site.categories %}
+  <url><loc>{{ c[0] | slugify: 'pretty' | prepend: '/categories/' | append: '/' | absolute_url }}</loc></url>
+  {%- endfor %}
+  {%- for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
+  </url>
+  {%- endfor %}
+</urlset>

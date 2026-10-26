@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.10 — HTTP, 웹이 대화하는 법"
 date: 2026-10-21 07:55:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, http, web, status-code, lecture]
+tags: [networking, devops, lecture]
 description: 식당 주문서처럼 요청하고 접시처럼 응답하는 HTTP. 요청과 응답, GET과 POST, 상태 코드 200·404·500을 따라가는 약 2분 강의와 정리.
 ---
 

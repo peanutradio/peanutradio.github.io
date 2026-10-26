@@ -2,7 +2,7 @@
 title: "GitHub Pages 블로그에 강의 영상 올리기 — HTML 임베드를 버리고 mp4로 간 이유"
 date: 2026-10-13 18:55:00 +0900
 categories: [Dev Notes]
-tags: [github-pages, jekyll, video, ffmpeg, chirpy]
+tags: [github, lecture, automation]
 description: 3D 인터랙티브 강의를 iframe으로 넣었더니 소리만 나고 화면이 넘어가지 않았다. mp4와 video 태그로 바꾸고, 포스터·챕터·용량까지 정리한 과정을 남긴다.
 ---
 

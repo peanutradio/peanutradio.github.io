@@ -2,7 +2,7 @@
 title: "Foundry Agent Service로 첫 에이전트 만들기 — 파일 검색부터 코드 호출까지"
 date: 2026-10-11 18:55:00 +0900
 categories: [Azure AI]
-tags: [foundry, agent-service, file-search, azure-openai, hands-on]
+tags: [foundry, ai-agent, rag, hands-on]
 description: 새 Microsoft Foundry 포털에서 노코드로 에이전트를 만들고, FAQ 파일을 올려 파일 검색으로 답하게 한 뒤, 같은 에이전트를 Python 코드에서 부르는 데까지 실제 화면으로 정리했다. 기본으로 켜지는 웹 검색 요금 주의점도 적었다.
 ---
 

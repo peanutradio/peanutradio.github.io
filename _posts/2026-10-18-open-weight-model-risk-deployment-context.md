@@ -2,7 +2,7 @@
 title: "오픈 웨이트 모델 위험 관리 — '안전한 모델'이 아니라 '어디에 어떻게 쓰나'"
 date: 2026-10-18 06:51:00 +0900
 categories: [IT News]
-tags: [azure, foundry, open-weight, ai-risk, nvidia, governance]
+tags: [azure, foundry, llm, security, governance]
 description: Microsoft가 NVIDIA와 낸 오픈 웨이트 모델 위험 관리 문서를 읽고, 모델이 아니라 배포 맥락과 통제 계층으로 질문을 바꾸는 법을 정리했다.
 ---
 

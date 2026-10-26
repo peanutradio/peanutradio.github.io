@@ -2,7 +2,7 @@
 title: "Azure DevOps 플러그인이 Microsoft Copilot에 들어왔다"
 date: 2026-10-21 06:49:00 +0900
 categories: [IT News]
-tags: [azure-devops, copilot, cowork, plugin, backlog]
+tags: [devops, copilot, ai-agent]
 description: Azure DevOps 플러그인이 Copilot Chat·Cowork·Code에 들어왔다. 설치는 두 단계지만 GA 여부와 권한 요건은 글에 없어 도입 전 확인이 필요하다.
 ---
 

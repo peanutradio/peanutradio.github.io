@@ -2,7 +2,7 @@
 title: "Foundry 음성 에이전트와 장시간 실행 복원력 — 프리뷰 항목 읽기"
 date: 2026-10-25 06:53:00 +0900
 categories: [Azure AI]
-tags: [foundry, voice-agent, agent-service, observability, a2a]
+tags: [foundry, ai-agent, observability]
 description: Foundry의 음성 에이전트와 장시간 실행 복원력은 프리뷰, 도구 검색·A2A·Routines는 GA다. 상태별로 나눠 도입 순서를 해석했다.
 ---
 

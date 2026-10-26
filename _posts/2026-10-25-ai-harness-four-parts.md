@@ -2,7 +2,7 @@
 title: "모델 바깥의 소프트웨어, AI 하네스를 설계하는 4가지 축"
 date: 2026-10-25 10:40:00 +0900
 categories: [AI Agent]
-tags: [ai-agent, harness, memory, sandbox, evaluation]
+tags: [ai-agent, security, governance]
 description: 모델은 코드를 쓸 줄 알아도 파일을 열고 테스트를 돌리고 위험한 일 앞에서 멈추지는 못한다. 그 일을 하는 하네스를 컨텍스트·도구·런타임·평가 네 축으로 정리하고, 제 개인 비서 에이전트에 대어 봤다.
 ---
 

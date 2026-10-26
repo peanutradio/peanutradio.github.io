@@ -2,7 +2,7 @@
 title: "네트워크 기초 EP.02 — 네트워크가 뭘까? 컴퓨터끼리 말하는 법"
 date: 2026-10-10 21:40:00 +0900
 categories: [Video Lectures, 네트워크 기초]
-tags: [networking, lan, wan, internet, protocol, lecture]
+tags: [networking, lecture]
 description: 실 전화기에서 시작해 우리 집 LAN, 동네와 도시를 잇는 WAN, 네트워크의 네트워크인 인터넷, 그리고 프로토콜까지 3D로 따라가는 약 4분 강의와 정리.
 ---
 

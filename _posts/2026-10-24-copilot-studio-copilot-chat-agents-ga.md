@@ -2,7 +2,7 @@
 title: "Copilot Studio, Copilot Chat 에이전트 제작 기능 10/26 GA 예정"
 date: 2026-10-24 06:51:00 +0900
 categories: [IT News]
-tags: [copilot-studio, copilot-chat, declarative-agent, alm, microsoft-365]
+tags: [copilot-studio, copilot, ai-agent, governance, microsoft-365]
 description: Copilot Studio가 Copilot Chat 에이전트용 토픽·연결된 에이전트·평가·모니터링·환경별 배포를 10월 26일 GA로 낸다. 운영자가 챙길 점을 정리했다.
 ---
 

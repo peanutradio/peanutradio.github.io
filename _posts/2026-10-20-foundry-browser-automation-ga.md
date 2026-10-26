@@ -2,7 +2,7 @@
 title: "Foundry 브라우저 자동화 도구 GA — 에이전트에게 브라우저를 맡기는 법"
 date: 2026-10-20 06:51:00 +0900
 categories: [IT News]
-tags: [foundry, browser-automation, playwright, ai-agent, mcp]
+tags: [foundry, ai-agent, automation, mcp]
 description: Foundry의 Browser Automation Tool이 정식 출시됐다. 관리형 클라우드 브라우저, Live View·Take control, 단계적 권한 개방까지 운영자 관점에서 정리했다.
 ---
 

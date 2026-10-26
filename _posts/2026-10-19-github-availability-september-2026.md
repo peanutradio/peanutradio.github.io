@@ -2,7 +2,7 @@
 title: "GitHub 9월 가용성 보고서 — 백그라운드 작업과 재시도가 장애를 키운 방식"
 date: 2026-10-19 06:51:00 +0900
 categories: [IT News]
-tags: [github, availability, incident, copilot, azure]
+tags: [github, devops, copilot, azure]
 description: GitHub이 9월 장애 두 건과 Azure 이전 진행 상황을 공개했다. 원인과 재발 방지책, 그리고 팀이 가져갈 점검 항목을 정리했다.
 ---
 

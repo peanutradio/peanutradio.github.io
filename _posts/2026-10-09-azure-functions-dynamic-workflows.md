@@ -2,7 +2,7 @@
 title: "Azure Functions Dynamic Workflows — 모델은 계획만, 실행은 Durable이"
 date: 2026-10-09 06:49:00 +0900
 categories: [AI Agent]
-tags: [azure-functions, durable-functions, ai-agent, orchestration, hosted-skills]
+tags: [azure, ai-agent, foundry]
 description: Azure Functions Hosted Skills의 Dynamic Workflows는 LLM이 DAG 계획을 한 번 쓰고 Durable Functions가 추론 루프 밖에서 실행해 토큰과 지연을 줄인다.
 ---
 
