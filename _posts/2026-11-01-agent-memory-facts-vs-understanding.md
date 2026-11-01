@@ -48,24 +48,24 @@ description: 에이전트가 세션이 끝난 뒤에도 무엇을 기억해야 �
   <text x="93" y="140" text-anchor="middle" class="sk-label">세션 (단기 기억)</text>
   <text x="93" y="160" text-anchor="middle" class="sk-sub">RAM처럼 — 끝나면 사라짐</text>
   <text x="93" y="176" text-anchor="middle" class="sk-sub">대화 · 음성 · 카메라</text>
-  <rect x="300" y="36" width="200" height="66" rx="8" class="sk-box-accent"/>
+  <rect x="288" y="36" width="224" height="66" rx="8" class="sk-box-accent"/>
   <text x="400" y="62" text-anchor="middle" class="sk-label">사실 → 구조화 DB</text>
   <text x="400" y="82" text-anchor="middle" class="sk-mono">Postgres · MySQL · Cloud SQL</text>
-  <rect x="300" y="117" width="200" height="66" rx="8" class="sk-box-accent"/>
+  <rect x="288" y="117" width="224" height="66" rx="8" class="sk-box-accent"/>
   <text x="400" y="143" text-anchor="middle" class="sk-label">이해 → 벡터 저장소</text>
   <text x="400" y="163" text-anchor="middle" class="sk-mono">pgvector · AlloyDB · Memory Bank</text>
-  <rect x="300" y="210" width="200" height="66" rx="8" class="sk-box-muted"/>
+  <rect x="288" y="210" width="224" height="66" rx="8" class="sk-box-muted"/>
   <text x="400" y="236" text-anchor="middle" class="sk-label">원본 오디오·영상</text>
   <text x="400" y="256" text-anchor="middle" class="sk-sub">기억 아님 · 재생·감사·디버깅용</text>
-  <path d="M180,130 L296,72" class="sk-line-accent" marker-end="url(#am-a1)"/>
-  <path d="M180,150 L296,150" class="sk-line-accent" marker-end="url(#am-a1)"/>
-  <path d="M180,170 L296,240" class="sk-line" marker-end="url(#am-m1)"/>
-  <text x="530" y="66" class="sk-sub">"목요일 저녁 약속"</text>
-  <text x="530" y="82" class="sk-sub">"파란 재킷 구매" — 찾는다</text>
-  <text x="530" y="147" class="sk-sub">"화려한 것보다 단순한 것"</text>
-  <text x="530" y="163" class="sk-sub">"자신감엔 어두운 색" — 떠올린다</text>
-  <text x="530" y="240" class="sk-sub">뽑아낸 의미만 위로 올린다</text>
-  <text x="530" y="256" class="sk-sub">"그 검은 모자를 또 썼다"</text>
+  <path d="M180,130 L284,72" class="sk-line-accent" marker-end="url(#am-a1)"/>
+  <path d="M180,150 L284,150" class="sk-line-accent" marker-end="url(#am-a1)"/>
+  <path d="M180,170 L284,240" class="sk-line" marker-end="url(#am-m1)"/>
+  <text x="526" y="66" class="sk-sub">"목요일 저녁 약속"</text>
+  <text x="526" y="82" class="sk-sub">"파란 재킷 구매" — 찾는다</text>
+  <text x="526" y="147" class="sk-sub">"화려한 것보다 단순한 것"</text>
+  <text x="526" y="163" class="sk-sub">"자신감엔 어두운 색" — 떠올린다</text>
+  <text x="526" y="240" class="sk-sub">뽑아낸 의미만 위로 올린다</text>
+  <text x="526" y="256" class="sk-sub">"그 검은 모자를 또 썼다"</text>
 </svg>
 <figcaption>저장소를 고르기 전에 기억의 종류부터 나눠야 한다. 사실과 이해는 같은 곳에 살면 안 된다.</figcaption>
 </figure>
