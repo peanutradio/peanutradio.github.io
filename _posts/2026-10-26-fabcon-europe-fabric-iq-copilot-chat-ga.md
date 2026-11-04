@@ -87,6 +87,9 @@ Database Hub, IQ Sharing, 연결 끊김 운영은 프리뷰다. 데이터베이�
 
 의미 있는 답변 근거를 어디에 두느냐는 문서 저장소 쪽에서도 같은 질문이다. SharePoint 쪽 사례는 [벡터 DB 없이 RAG — SharePoint Embedded Retrieval API와 spe-mcp](/posts/spe-retrieval-api-mcp-no-vector-db/)에서 다뤘다.
 
+
+> **앞선 글** — [Fabric IQ가 Copilot 안으로 — MS 9월 데이터 발표 정리](/posts/ms-fabric-iq-data-innovations/)
+
 ## 참고
 
 - [New Microsoft data innovations unlock what only your business knows](https://blogs.microsoft.com/blog/2026/09/28/new-microsoft-data-innovations-unlock-what-only-your-business-knows/) — Official Microsoft Blog, 2026-09-28

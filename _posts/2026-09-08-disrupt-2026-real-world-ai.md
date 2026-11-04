@@ -16,6 +16,53 @@ _사진: [TechCrunch](https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt
 - **장소**: 샌프란시스코 모스콘 웨스트
 - **규모**: 스타트업·테크·VC 리더 1만 명 이상
 
+
+<figure class="sketch">
+<svg viewBox="0 0 720 330" role="img" aria-label="리얼 월드 AI 스테이지의 세 세션(데이터 격차, 실패와 안전, 엣지)이 소프트웨어 에이전트의 RAG, 되돌릴 수 없는 동작, 노드별 모델 선택 문제와 각각 대응되는 그림">
+  <defs>
+    <marker id="disr-m1" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="sk-fill-accent"/>
+    </marker>
+  </defs>
+  <text x="0" y="14" class="sk-title">① 물리 AI 세션 ↔ 소프트웨어 에이전트의 같은 문제</text>
+
+  <text x="110" y="52" text-anchor="middle" class="sk-label">Real World AI 세션</text>
+  <text x="610" y="52" text-anchor="middle" class="sk-label">업무 에이전트</text>
+
+  <rect x="8" y="68" width="204" height="62" rx="8" class="sk-box"/>
+  <text x="110" y="93" text-anchor="middle" class="sk-label">Robots' ChatGPT Moment</text>
+  <text x="110" y="113" text-anchor="middle" class="sk-sub">범용 로봇 지능을 막는 데이터 격차</text>
+
+  <rect x="8" y="148" width="204" height="62" rx="8" class="sk-box"/>
+  <text x="110" y="173" text-anchor="middle" class="sk-label">AI Failure &amp; Safety</text>
+  <text x="110" y="193" text-anchor="middle" class="sk-sub">실패 대가가 큰 환경의 자율 시스템</text>
+
+  <rect x="8" y="228" width="204" height="62" rx="8" class="sk-box"/>
+  <text x="110" y="253" text-anchor="middle" class="sk-label">Edge AI Deployment</text>
+  <text x="110" y="273" text-anchor="middle" class="sk-sub">클라우드 연결이 없는 곳에서 실행</text>
+
+  <rect x="408" y="68" width="304" height="62" rx="8" class="sk-box-accent"/>
+  <text x="560" y="93" text-anchor="middle" class="sk-label">우리 회사 업무 데이터 부족</text>
+  <text x="560" y="113" text-anchor="middle" class="sk-sub">RAG로 이 격차를 메운다</text>
+
+  <rect x="408" y="148" width="304" height="62" rx="8" class="sk-box-accent"/>
+  <text x="560" y="173" text-anchor="middle" class="sk-label">되돌릴 수 없는 동작을 자율에 맡김</text>
+  <text x="560" y="193" text-anchor="middle" class="sk-sub">잘못된 메일 발송, 데이터 삭제</text>
+
+  <rect x="408" y="228" width="304" height="62" rx="8" class="sk-box-accent"/>
+  <text x="560" y="253" text-anchor="middle" class="sk-label">노드마다 모델 고르기</text>
+  <text x="560" y="273" text-anchor="middle" class="sk-sub">로컬 판단 vs 위로 올릴 판단</text>
+
+  <path d="M214,99 L406,99" class="sk-line-accent" marker-end="url(#disr-m1)"/>
+  <path d="M214,179 L406,179" class="sk-line-accent" marker-end="url(#disr-m1)"/>
+  <path d="M214,259 L406,259" class="sk-line-accent" marker-end="url(#disr-m1)"/>
+
+  <text x="360" y="320" text-anchor="middle" class="sk-sub">공통 질문: 자율성을 어디까지 줄 것인가</text>
+</svg>
+<figcaption>물리 AI라고 따로 노는 문제가 아니라, 소프트웨어 에이전트와 같은 "자율성을 어디까지 줄 것인가"라는 질문을 다른 무대에서 하고 있다.</figcaption>
+</figure>
+
 ## 라인업
 
 | 이름 | 직함 | 소속 |

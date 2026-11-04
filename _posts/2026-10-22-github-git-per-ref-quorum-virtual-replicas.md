@@ -69,6 +69,9 @@ description: GitHub가 Git 쓰기 병목을 참조(ref) 단위 쿼럼으로, 읽
 4. **도입 검토자: 이 글만으로 성능 약속을 하지 마세요.** 수치는 내부 테스트이고 사용자 체감 개선 일정은 글에 없습니다. 장애 이력은 [GitHub 9월 가용성 보고서](/posts/github-availability-september-2026/) 정리 글과 함께 보면 재시도·백그라운드 작업이 부하를 키우는 맥락이 이어집니다.
 5. **강의할 때: "합의는 작게, 데이터는 크게"로 요약하세요.** 불변·내용 기반 이름의 Git 객체는 합의가 필요 없고, 순서가 필요한 소수의 참조 갱신만 합의 대상이라는 원문의 관점이 분산 시스템 수업의 좋은 사례입니다.
 
+
+> **앞선 글** — [10월 첫째 주 GitHub 소식 — 에이전트 규모 git 인프라·ReviewBench·시크릿 보호](/posts/github-early-october-roundup/)
+
 ## 참고
 
 - [The bridge to agent-scale Git infrastructure — GitHub Blog](https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/)

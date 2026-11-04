@@ -79,6 +79,9 @@ Foundry로 에이전트를 먼저 만들어 보려면 [Foundry Agent Service로 
 > 📺 [Peanut Radio AI 유튜브 채널](https://www.youtube.com/@PeanutRadioAI) — AI 시대의 IT, 기초부터 실무까지
 {: .prompt-tip }
 
+
+> **후속 글** — [SharePoint Embedded 엔터프라이즈 업데이트 — 분당 12,000 RU와 MCP 서버(프리뷰)](/posts/sharepoint-embedded-enterprise-limits-mcp/)
+
 ## 참고
 
 - [Build AI-powered apps without creating a vector database — Microsoft 365 Developer Blog (2026-10-13)](https://devblogs.microsoft.com/microsoft365dev/build-ai-powered-apps-without-creating-a-vector-database/)

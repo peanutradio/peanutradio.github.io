@@ -9,6 +9,69 @@ description: 전자부품 제조사의 PLM 핵심 기능 4가지(BOM 관리, 설
 > 고객사 보안을 위해 회사명, 제품명, 사내 시스템명, 환경 주소는 지우거나 가렸다. 데이터는 실제 데이터가 아니라 제품 구조를 본뜬 샘플이다.
 {: .prompt-info }
 
+
+<figure class="sketch">
+<svg viewBox="0 0 720 340" role="img" aria-label="Entra ID 로그인 후 모델 기반 앱 PLM에서 Dataverse, SharePoint, Power Automate 흐름이 이어지고, 결재와 SAP 전송 대기열을 거쳐 본 구축 때 게이트웨이로 SAP에 연결되는 구조">
+  <defs>
+    <marker id="powe-m1" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="sk-fill-muted"/>
+    </marker>
+    <marker id="powe-m2" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="sk-fill-accent"/>
+    </marker>
+  </defs>
+  <text x="0" y="14" class="sk-title">① PLM PoC — Microsoft 365 안에서 끝까지 이어지는 흐름</text>
+
+  <rect x="8" y="50" width="130" height="52" rx="8" class="sk-box"/>
+  <text x="73" y="73" text-anchor="middle" class="sk-label">Entra ID</text>
+  <text x="73" y="91" text-anchor="middle" class="sk-sub">사용자 로그인</text>
+
+  <rect x="190" y="50" width="150" height="52" rx="8" class="sk-box-accent"/>
+  <text x="265" y="73" text-anchor="middle" class="sk-label">모델 기반 앱 「PLM」</text>
+  <text x="265" y="91" text-anchor="middle" class="sk-sub">BOM·역전개·ECO 작성</text>
+
+  <rect x="392" y="50" width="150" height="52" rx="8" class="sk-box"/>
+  <text x="467" y="73" text-anchor="middle" class="sk-label">Dataverse</text>
+  <text x="467" y="91" text-anchor="middle" class="sk-sub">표 4개 · 품목·BOM·ECO</text>
+
+  <rect x="392" y="150" width="150" height="52" rx="8" class="sk-box"/>
+  <text x="467" y="173" text-anchor="middle" class="sk-label">SharePoint</text>
+  <text x="467" y="191" text-anchor="middle" class="sk-sub">품목별 폴더 · 버전 기록</text>
+
+  <rect x="190" y="150" width="150" height="52" rx="8" class="sk-box-accent"/>
+  <text x="265" y="173" text-anchor="middle" class="sk-label">Power Automate</text>
+  <text x="265" y="191" text-anchor="middle" class="sk-sub">'승인 요청'일 때만 시작</text>
+
+  <rect x="8" y="150" width="130" height="52" rx="8" class="sk-box"/>
+  <text x="73" y="173" text-anchor="middle" class="sk-label">Teams 결재</text>
+  <text x="73" y="191" text-anchor="middle" class="sk-sub">승인 / 반려</text>
+
+  <rect x="190" y="250" width="150" height="52" rx="8" class="sk-box"/>
+  <text x="265" y="273" text-anchor="middle" class="sk-label">SAP 전송 대기열</text>
+  <text x="265" y="291" text-anchor="middle" class="sk-sub">승인 1건 = JSON 1건</text>
+
+  <rect x="392" y="250" width="150" height="52" rx="8" class="sk-box-muted"/>
+  <text x="467" y="273" text-anchor="middle" class="sk-label">게이트웨이</text>
+  <text x="467" y="291" text-anchor="middle" class="sk-sub">본 구축 때 연결</text>
+
+  <rect x="580" y="250" width="132" height="52" rx="8" class="sk-box-muted"/>
+  <text x="646" y="273" text-anchor="middle" class="sk-label">SAP ERP</text>
+  <text x="646" y="291" text-anchor="middle" class="sk-sub">실제 반영은 아직</text>
+
+  <path d="M140,76 L188,76" class="sk-line" marker-end="url(#powe-m1)"/>
+  <path d="M342,76 L390,76" class="sk-line" marker-end="url(#powe-m1)"/>
+  <path d="M467,104 L467,148" class="sk-line" marker-end="url(#powe-m1)"/>
+  <path d="M392,164 L342,164" class="sk-line-accent" marker-end="url(#powe-m2)"/>
+  <path d="M190,176 L140,176" class="sk-line-accent" marker-end="url(#powe-m2)"/>
+  <path d="M265,204 L265,248" class="sk-line-accent" marker-end="url(#powe-m2)"/>
+  <path d="M342,276 L390,276" class="sk-line" stroke-dasharray="4 4" marker-end="url(#powe-m1)"/>
+  <path d="M544,276 L578,276" class="sk-line" stroke-dasharray="4 4" marker-end="url(#powe-m1)"/>
+</svg>
+<figcaption>PoC는 대기열 적재까지 Microsoft 365 안에서 끝나고, 점선으로 표시한 SAP 실제 연결부터 본 구축의 비용이 된다.</figcaption>
+</figure>
+
 ## 시작하며 — 왜 이걸 해 봤나
 
 "PLM은 전용 솔루션을 사야 한다"는 말을 현장에서 자주 듣는다. 맞는 말이다. 다만 중견 제조사와 이야기해 보면 정말 필요한 건 생각보다 단순할 때가 많다. **품목과 BOM을 한곳에서 보고, 설계변경을 결재로 돌리고, 도면 버전을 잃어버리지 않고, 확정된 BOM을 SAP로 넘기는 것.** 이미 Microsoft 365를 쓰는 회사라면 이 네 가지를 이미 가진 도구 안에서 할 수 있지 않을까?

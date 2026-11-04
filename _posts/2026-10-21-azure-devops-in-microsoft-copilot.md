@@ -64,6 +64,9 @@ Azure DevOps 플러그인이 Microsoft Copilot의 Chat, Cowork, Code 안에서 �
 - **IT 강사**: 교육에서는 "연결 자체"보다 "무엇을 읽고 무엇을 쓰는 도구인가"를 먼저 구분해서 보여 주는 게 좋습니다. 설치가 두 단계뿐이라 쉽게 시연되지만, 그래서 권한 설명이 빠지기 쉽습니다.
 - **도입 보류 신호**: 독자 댓글처럼 일부 사용자에게 아직 열리지 않았을 수 있습니다. 파일럿 전에 우리 테넌트에서 플러그인이 실제로 보이는지부터 확인하세요.
 
+
+> **후속 글** — [Azure DevOps Autofix가 에이전트로 바뀐다 — 알림에서 수정 PR까지](/posts/azure-devops-agentic-autofix/)
+
 ## 참고
 
 - [Azure DevOps available in Microsoft Copilot — Azure DevOps Blog (2026-10-20)](https://devblogs.microsoft.com/devops/azure-devops-available-in-microsoft-copilot/)

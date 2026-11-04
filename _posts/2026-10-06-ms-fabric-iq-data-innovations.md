@@ -82,6 +82,9 @@ SQL Server on Azure Local이 GA됐다. 로컬 환경에서 SQL Server와 Azure �
 
 이번 발표는 개별 기능보다 방향이 더 눈에 띈다. Copilot의 답, 에이전트의 작업, 앱의 데이터가 모두 Fabric의 같은 의미 계층 위로 모이고 있다. Copilot Studio로 사내 에이전트를 만드는 입장이라면, 앞으로는 "지식 소스를 어떻게 붙일까"보다 "Fabric에 정의가 잘 정리돼 있는가"가 먼저 물어야 할 질문이 될 것 같다.
 
+
+> **후속 글** — [Fabric IQ, Copilot Chat·Cowork에서 GA — FabCon 발표를 상태별로 읽기](/posts/fabcon-europe-fabric-iq-copilot-chat-ga/)
+
 ## 참고
 
 - [New Microsoft data innovations unlock what only your business knows — Official Microsoft Blog (2026-09-28)](https://blogs.microsoft.com/blog/2026/09/28/new-microsoft-data-innovations-unlock-what-only-your-business-knows/)

@@ -117,6 +117,9 @@ description: GitHub이 10월 첫째 주에 낸 글 세 편을 묶었다. 에이�
 5. **리뷰 에이전트를 고를 때 ReviewBench를 질문지로 쓴다.** 벤더에 Grounded 재현율과 정밀도를 묻고, 판정자가 LLM이라는 한계를 감안해 사내 PR 몇십 건으로 따로 비교해 보는 것이 맞다. 강의에서는 "코멘트가 많다 = 좋은 리뷰"가 아니라는 점, 정밀도와 재현율의 균형을 먼저 짚는다.
 6. **git 인프라 재설계는 당장 설정할 것이 없다.** 일정도 플랜별 적용도 아직 없다. 다만 에이전트 여러 개가 한 저장소에 동시에 커밋하는 구성을 설계 중이라면, 지연의 원인이 내 쪽이 아닐 수도 있다는 점과 브랜치 보호·머지 큐 같은 기존 통제는 그대로 유지된다는 점을 기억해 두면 된다.
 
+
+> **후속 글** — [GitHub Git 인프라 후속편 — 참조 단위 쿼럼과 가상 복제본](/posts/github-git-per-ref-quorum-virtual-replicas/)
+
 ## 참고
 
 - [Building Git infrastructure for agent-scale development — GitHub Blog (2026-10-06)](https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/)
