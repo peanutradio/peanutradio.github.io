@@ -22,7 +22,7 @@ Microsoft 생태계 위에서 **AI 에이전트를 직접 만드는** 사람의 
 
 ---
 
-## 1. 카테고리 — 7개. 이 밖으로 나가지 않는다
+## 1. 카테고리 — 8개. 이 밖으로 나가지 않는다
 
 | 카테고리 | 범위 |
 |---|---|
@@ -33,6 +33,7 @@ Microsoft 생태계 위에서 **AI 에이전트를 직접 만드는** 사람의 
 | `Dev Notes` | 트러블슈팅, 환경 설정, 짧은 실무 메모, **직접 한 핸즈온 기록** |
 | `Video Lectures` | 영상 강의 — 주제별·시리즈별 강의. **2단계 카테고리**로 시리즈를 나눈다: `categories: [Video Lectures, 시리즈명]` (예: `네트워크 기초`). 양식은 `_drafts/TEMPLATE-video-lecture.md`. 2026-10-09 사용자 승인으로 추가 |
 | `Power Platform` | Power Apps·Dataverse·Power Automate·SharePoint 통합 실무 — 업무 시스템(PLM 등) 구축·PoC 기록. **2단계**: `categories: [Power Platform, 주제]` (예: `PLM`). 고객사 사례는 반드시 익명화. 2026-10-13 사용자 승인으로 추가 |
+| `Study Notes` | 공부하며 정리한 개념·용어 노트 (예: M365 보안 용어). **2단계**: `categories: [Study Notes, 주제]` (예: `M365 보안`). **회사·고객사·사람 이름·회의 내용은 넣지 않고 일반 개념만.** 2026-11-19 사용자 승인으로 추가 |
 
 **어디에 넣을지 헷갈릴 때**
 
@@ -61,7 +62,7 @@ description: 한 문장 요약. 160자 이내.
 ---
 ```
 
-- `categories`는 위 7개 중 **하나만**. 대소문자·띄어쓰기까지 정확히. (예외: `Video Lectures`·`Power Platform` 은 `[Video Lectures, 시리즈명]` 2단계)
+- `categories`는 위 8개 중 **하나만**. 대소문자·띄어쓰기까지 정확히. (예외: `Video Lectures`·`Power Platform`·`Study Notes` 는 `[Video Lectures, 시리즈명]` 2단계)
 - `tags`는 **아래 23개 중에서만 2~5개** 고른다 (2026-10-26 애드센스 재심사 대비 정리. 새 태그를 만들면 글 1편짜리 빈 태그 페이지가 늘어난다).
   `ai-agent` `mcp` `copilot` `copilot-studio` `microsoft-365` `azure` `foundry` `security` `identity` `governance` `rag` `llm` `openai` `claude` `github` `devops` `power-platform` `automation` `observability` `cost` `networking` `lecture` `hands-on`
   - 매핑표: `tools/tag-map.md` 맨 아래 '2026-10-26 통합'
@@ -272,7 +273,7 @@ _사진: [TechCrunch](...), [CC BY 2.0](...) — 2018년 Disrupt 현장 자료 �
 
 ## 7. 하지 말 것
 
-- ❌ 위 7개 밖의 카테고리
+- ❌ 위 8개 밖의 카테고리
 - ❌ 미래 날짜 `date`
 - ❌ 출처 없는 수치·인용
 - ❌ 자막·원문 없이 제목만 보고 요약

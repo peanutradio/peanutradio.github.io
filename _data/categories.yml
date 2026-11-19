@@ -36,3 +36,11 @@
   icon: fas fa-play-circle
   desc: 주제별·시리즈별 영상 강의
   series: true
+
+# 2026-11-19 사용자 승인. 2단계 카테고리 [Study Notes, 주제] — 공부하며 정리한 개념 노트. 회사·고객 정보는 넣지 않는다.
+- name: Study Notes
+  emoji: "📚"
+  label: 공부 노트
+  icon: fas fa-book
+  desc: 공부하며 정리한 개념·용어 노트
+  series: true
